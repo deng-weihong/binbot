@@ -3,6 +3,8 @@
 本目录收录从 Creo Parametric 导出的 STEP AP214 结构模型，长度单位为毫米（mm）。
 当前共 23 个 STEP 文件，包含 6 个装配文件和 17 个零件文件。
 
+**当前结构仅适用于 3D 打印，未做拔模设计，不可直接用于开模注塑。**
+
 ## 整机装配
 
 ![BinBot 整机结构装配](images/binbot-mechanical-assembly.png)
