@@ -1,20 +1,24 @@
 # BinBot
 
 <p align="center">
-  <img src="00_Image/58f80e559561c450734f7a80bd527803.jpg" alt="BinBot product render" width="760">
+  <img src="00_Image/binbot-desktop-real.jpg" alt="BinBot 主机与圆屏笔筒模块实物" width="760">
 </p>
 
 <p align="center">
   <strong>基于 Rockchip RV1106 的开源 AI 桌面助手与桌面屏设备</strong>
 </p>
 
+> [!WARNING]
+> 项目仍在持续开发和整理中，软硬件及文档会继续调整。由于开发时间仓促，整体方案
+> 尚未经过完整、系统的验证，不能保证当前设计、功能、稳定性和可靠性均无问题。
+> 现有演示、编译结果或局部测试不代表整机验证通过。
+> **当前资料仅供学习、研究和交流，请勿直接用于生产或量产。**
+
 BinBot 是一个软硬件结合的桌面 AI 设备项目。它把电脑开机、USB 和存储卡扩展、
 手机充电、音频播放、语音交互和桌面陪伴集中到一个设备中，同时保留可扩展的
 AI Agent、视觉识别和模块化硬件接口。
 
-项目的出发点很简单：电脑主机通常放在桌面下方，开机、插 U 盘、读取存储卡和
-连接音箱都需要弯腰或在一堆线材中寻找接口。BinBot 希望把这些高频操作放回手边，
-再通过屏幕、声音、旋钮、实体按键和振动提供自然的反馈。
+
 
 ## 项目特点
 
@@ -53,13 +57,19 @@ BinBot 将原本分散的桌面设备组合到一个位置：
 
 ## 产品展示
 
-| 产品效果图 | 实机视觉功能 |
-| --- | --- |
-| <img src="00_Image/58f80e559561c450734f7a80bd527803.jpg" alt="BinBot product render" width="420"> | <img src="00_Image/900f121757487ddff35c428bb69d544a.jpg" alt="BinBot camera and vision preview" width="420"> |
+### 实物照片
 
-| 实机音乐界面 | 产品爆炸结构 |
+页首展示主机与圆屏笔筒模块的桌面实物，以下为视觉功能和音乐界面的实机照片。
+
+| 实机视觉功能 | 实机音乐界面 |
 | --- | --- |
-| <img src="00_Image/a61bd823b729cb52ef8865d0f7248d8b.jpg" alt="BinBot music interface" width="420"> | <img src="00_Image/c4d8d5c624593e937ba6935c17765067.jpg" alt="BinBot exploded view" width="420"> |
+| <img src="00_Image/900f121757487ddff35c428bb69d544a.jpg" alt="BinBot 视觉功能实机照片" width="420"> | <img src="00_Image/a61bd823b729cb52ef8865d0f7248d8b.jpg" alt="BinBot 音乐界面实机照片" width="420"> |
+
+### 设计效果与结构
+
+| 产品效果图 | 产品爆炸结构 |
+| --- | --- |
+| <img src="00_Image/58f80e559561c450734f7a80bd527803.jpg" alt="BinBot product render" width="420"> | <img src="00_Image/c4d8d5c624593e937ba6935c17765067.jpg" alt="BinBot exploded view" width="420"> |
 
 ## 硬件规格
 
@@ -88,11 +98,22 @@ BinBot 将原本分散的桌面设备组合到一个位置：
 - 使用 RV1106 本地 NPU 运行视觉模型，支持手部、手势和目标检测等能力。
 - 通过 Wi-Fi 连接多台设备，实现状态同步和“拍一拍”等远程互动。
 
+### 语音唤醒相关项目
+
+本地语音唤醒的相关实现已独立整理到以下仓库：
+
+| 项目 | 内容 |
+| --- | --- |
+| [snowboy-kws](https://github.com/deng-weihong/snowboy-kws) | 面向嵌入式 ARMv7 Linux 的 Snowboy 语音唤醒 C++ 适配器 |
+| [fsmn-kws](https://github.com/deng-weihong/fsmn-kws) | 面向嵌入式 Linux 的声学前端与离线语音唤醒运行库，支持“你好米雅”模型 |
+
+接口、构建方式和模型使用说明见各项目 README。
+
 ## 仓库结构
 
 ```text
 00_Image/              产品渲染图、实机照片和展示图片
-01_3D_MD_ME_Binbot/   3D 模型、机械设计和电子设计资料
+01_3D_MD_ME_Binbot/   3D 模型与 MD/ME 机械设计资料
 02_Software_Binbot/   设备端软件、服务端和控制台
 03_Hardware_Binbot/   硬件资料、板级支持和硬件文档
 ```
@@ -113,8 +134,16 @@ BinBot 将原本分散的桌面设备组合到一个位置：
 
 ## 开源进度
 
-当前版本先公开 BinBot 的产品图片和项目目录结构。3D、软件和硬件资料会按目录
-逐步整理并发布，发布内容会同时补充对应的构建方法、使用说明和第三方许可信息。
+当前正在整理集成 BinBot App 的 RV1106 预编译系统固件，以及 ESP32-C3 圆屏、
+全息屏、转盘和氛围灯固件。首批提供刷机包、校验文件和设备配置
+说明，详情见 [软件与固件](02_Software_Binbot/README.md)。镜像大文件通过
+GitHub Releases 分发。
+
+机械结构模型已整理至 [01_3D_MD_ME_Binbot/MD](01_3D_MD_ME_Binbot/MD/README.md)，
+包含结构总装、子装配、壳体、支架与垫片，共 23 个 STEP 文件。
+
+App 源码、系统开发资料和其余设计与硬件资料将按目录分批整理并公开。对应资料发布时
+会补充构建方法、使用说明和第三方许可信息。
 
 目前仓库中的图片包括产品渲染图、实机运行图和爆炸结构图；它们用于展示设备的
 外观、交互界面和内部模块布局。
@@ -127,6 +156,12 @@ BinBot 将原本分散的桌面设备组合到一个位置：
 
 欢迎通过 Issues 反馈问题、提出功能建议，或提交与硬件设计、嵌入式软件、界面和
 AI 能力相关的改进。项目资料会随着硬件和软件版本逐步完善。
+
+扫描下方二维码加入 BinBot QQ 交流群，交流使用体验、问题和改进建议。
+
+<p align="center">
+  <img src="00_Image/binbot-qq-group.png" alt="BinBot QQ 交流群二维码" width="300">
+</p>
 
 ## License
 

@@ -1,0 +1,3 @@
+# Preserve CAD exports byte-for-byte, including their original line endings.
+*.stp -text -diff
+*.step -text -diff
