@@ -1,0 +1,263 @@
+{
+  "schema": 1,
+  "layers": [
+    {
+      "type": "art",
+      "parent": -1,
+      "when": "",
+      "src": "art-000.png",
+      "x": 0,
+      "y": 0,
+      "w": 720,
+      "h": 720
+    },
+    {
+      "type": "art",
+      "parent": 0,
+      "when": "",
+      "src": "art-001.png",
+      "x": 1,
+      "y": 421,
+      "w": 598,
+      "h": 68
+    },
+    {
+      "type": "art",
+      "parent": 1,
+      "when": "",
+      "src": "art-002.png",
+      "x": 161,
+      "y": 517,
+      "w": 518,
+      "h": 56
+    },
+    {
+      "type": "art",
+      "parent": 2,
+      "when": "",
+      "src": "art-003.png",
+      "x": 248,
+      "y": 204,
+      "w": 70,
+      "h": 30
+    },
+    {
+      "type": "text",
+      "parent": -1,
+      "when": "",
+      "text": "{hour_cn}时",
+      "x": 567.40625,
+      "y": 48,
+      "w": 96.59375,
+      "h": 276,
+      "size": 92,
+      "weight": 400,
+      "font": "Ma Shan Zheng",
+      "color": "#22201c",
+      "opacity": 255,
+      "spacing": 0,
+      "angle": 0,
+      "numeric": true,
+      "baseline": 125.28,
+      "align": "start",
+      "anchor": 567.40625,
+      "vertical": true,
+      "multiline": true,
+      "lineHeight": 96.6,
+      "shadow": "none"
+    },
+    {
+      "type": "text",
+      "parent": -1,
+      "when": "",
+      "text": "{minute_cn}分",
+      "x": 476.21875,
+      "y": 144,
+      "w": 67.1875,
+      "h": 256,
+      "size": 64,
+      "weight": 400,
+      "font": "Ma Shan Zheng",
+      "color": "#22201c",
+      "opacity": 217,
+      "spacing": 0,
+      "angle": 0,
+      "numeric": true,
+      "baseline": 197.76,
+      "align": "start",
+      "anchor": 476.21875,
+      "vertical": true,
+      "multiline": true,
+      "lineHeight": 67.2,
+      "shadow": "none"
+    },
+    {
+      "type": "text",
+      "parent": -1,
+      "when": "",
+      "text": "{date_cn} · {weekday_cn}",
+      "x": 423.71875,
+      "y": 88,
+      "w": 28.5,
+      "h": 230.65625,
+      "size": 19,
+      "weight": 400,
+      "font": "Noto Serif SC",
+      "color": "#22201c",
+      "opacity": 153,
+      "spacing": 5.7,
+      "angle": 0,
+      "numeric": true,
+      "baseline": 103.96,
+      "align": "start",
+      "anchor": 423.71875,
+      "vertical": true,
+      "multiline": true,
+      "lineHeight": 28.5,
+      "shadow": "none"
+    },
+    {
+      "type": "art",
+      "parent": -1,
+      "when": "",
+      "src": "art-007.png",
+      "x": 591,
+      "y": 470,
+      "w": 71,
+      "h": 74
+    },
+    {
+      "type": "text",
+      "parent": -1,
+      "when": "",
+      "text": "{weather} · {temperature_cn}度",
+      "x": 56,
+      "y": 230,
+      "w": 30,
+      "h": 325.15625,
+      "size": 20,
+      "weight": 400,
+      "font": "Noto Serif SC",
+      "color": "#22201c",
+      "opacity": 179,
+      "spacing": 5,
+      "angle": 0,
+      "numeric": true,
+      "baseline": 246.8,
+      "align": "start",
+      "anchor": 56,
+      "vertical": true,
+      "multiline": true,
+      "lineHeight": 30,
+      "shadow": "none"
+    },
+    {
+      "type": "text",
+      "parent": -1,
+      "when": "",
+      "text": "{time}　下一项 {eventtime0} {event0}",
+      "x": 56,
+      "y": 657,
+      "w": 259.28125,
+      "h": 26,
+      "size": 18,
+      "weight": 400,
+      "font": "Noto Serif SC",
+      "color": "#f6f1e6",
+      "opacity": 230,
+      "spacing": 0.45,
+      "angle": 0,
+      "numeric": true,
+      "baseline": 672.12,
+      "align": "start",
+      "anchor": 56,
+      "vertical": false,
+      "multiline": false,
+      "lineHeight": 27,
+      "shadow": "none"
+    }
+  ],
+  "groups": [
+    {
+      "duration": 26000,
+      "delay": 0,
+      "reverse": false,
+      "easing": "linear",
+      "frames": [
+        {
+          "at": 0,
+          "transform": "translateX(-40px)",
+          "opacity": 0.85
+        },
+        {
+          "at": 0.5,
+          "transform": "translateX(50px)",
+          "opacity": 1
+        },
+        {
+          "at": 1,
+          "transform": "translateX(-40px)",
+          "opacity": 0.85
+        }
+      ],
+      "parent": -1,
+      "cx": 0,
+      "cy": 0,
+      "playing": false
+    },
+    {
+      "duration": 34000,
+      "delay": -12000,
+      "reverse": false,
+      "easing": "linear",
+      "frames": [
+        {
+          "at": 0,
+          "transform": "translateX(-40px)",
+          "opacity": 0.85
+        },
+        {
+          "at": 0.5,
+          "transform": "translateX(50px)",
+          "opacity": 1
+        },
+        {
+          "at": 1,
+          "transform": "translateX(-40px)",
+          "opacity": 0.85
+        }
+      ],
+      "parent": -1,
+      "cx": 0,
+      "cy": 0,
+      "playing": false
+    },
+    {
+      "duration": 18000,
+      "delay": 0,
+      "reverse": false,
+      "easing": "linear",
+      "frames": [
+        {
+          "at": 0,
+          "transform": "translate(-30px, 6px)",
+          "opacity": 1
+        },
+        {
+          "at": 0.5,
+          "transform": "translate(20px, -6px)",
+          "opacity": 1
+        },
+        {
+          "at": 1,
+          "transform": "translate(-30px, 6px)",
+          "opacity": 1
+        }
+      ],
+      "parent": -1,
+      "cx": 0,
+      "cy": 0,
+      "playing": false
+    }
+  ]
+}

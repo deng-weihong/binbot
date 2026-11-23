@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "hamster-wheel",
+  "name": "仓鼠跑轮",
+  "english": "Hamster Wheel",
+  "renderer": "reference",
+  "refresh_ms": 66,
+  "background": "#000000",
+  "foreground": "#ffffff",
+  "accent": "#e8643c"
+}

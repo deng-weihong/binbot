@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "dial-radio",
+  "name": "调频收音机",
+  "english": "Dial Radio",
+  "renderer": "reference",
+  "refresh_ms": 66,
+  "background": "#000000",
+  "foreground": "#ffffff",
+  "accent": "#e8643c"
+}

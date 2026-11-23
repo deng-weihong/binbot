@@ -1,0 +1,77 @@
+menu "Power card"
+
+    config POWER_CARD_WIFI_SSID
+        string "Wi-Fi SSID (serial configuration overrides this)"
+        default ""
+        help
+            Connects as a Wi-Fi station using DHCP. Leave empty and use the
+            serial wifi command to save credentials in NVS on first setup.
+
+    config POWER_CARD_WIFI_PASSWORD
+        string "Wi-Fi password"
+        default ""
+
+    config POWER_CARD_TCP_PORT
+        int "TCP command server port"
+        range 1024 65535
+        default 5000
+        help
+            IPv4 TCP server using newline-delimited JSON. Each request must
+            carry the device token shown by the serial token command.
+
+    config POWER_CARD_BUTTON_GPIO
+        int "Power button output GPIO (-1 disables output)"
+        range -1 21
+        default 3
+        help
+            IO-1 on the schematic: GPIO3 drives Q1 and the PW PhotoMOS.
+            Set -1 to disable this output.
+            GPIO12-17 are reserved for flash. Console pins are also rejected.
+
+    config POWER_CARD_BUTTON_ACTIVE_HIGH
+        bool "Power button output is active high"
+        default y
+        help
+            Enable for a switch circuit activated by a high GPIO level.
+            Otherwise a low level activates the switch.
+
+    config POWER_CARD_BUTTON_PRESS_MS
+        int "Short press duration (milliseconds)"
+        range 100 1000
+        default 500
+
+    config POWER_CARD_RESET_GPIO
+        int "Reset button output GPIO (-1 disables output)"
+        range -1 21
+        default 4
+        help
+            IO-2 on the schematic: GPIO4 drives Q2 and the RST PhotoMOS.
+
+    config POWER_CARD_RESET_ACTIVE_HIGH
+        bool "Reset button output is active high"
+        default y
+
+    config POWER_CARD_RESET_PRESS_MS
+        int "Reset press duration (milliseconds)"
+        range 100 1000
+        default 200
+
+    config POWER_CARD_LOCAL_BUTTON_GPIO
+        int "Local power button input GPIO (-1 disables input)"
+        range -1 21
+        default 5
+        help
+            IO-SW on the schematic: GPIO5 is connected to SW2 and ground.
+            Uses an internal pull-up and 50 ms debounce. A held button on
+            boot must be released before it can trigger a press.
+
+    config POWER_CARD_LED_SENSE_GPIO
+        int "Power LED sense input GPIO (-1 disables input)"
+        range -1 21
+        default 10
+        help
+            GPIO10 samples the PW_LED+ circuit using its external pull-down.
+            Reports raw level only; PC power-state interpretation is deferred
+            until the D4 clamp direction and actual waveforms are confirmed.
+
+endmenu

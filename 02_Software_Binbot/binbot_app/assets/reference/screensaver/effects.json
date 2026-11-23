@@ -1,0 +1,30 @@
+[
+  {
+    "name": "blush",
+    "x": 168,
+    "y": 434,
+    "width": 341,
+    "height": 53
+  },
+  {
+    "name": "spark",
+    "x": 556,
+    "y": 160,
+    "width": 96,
+    "height": 96
+  },
+  {
+    "name": "anger",
+    "x": 517,
+    "y": 114,
+    "width": 118,
+    "height": 118
+  },
+  {
+    "name": "zzz",
+    "x": 492,
+    "y": 151,
+    "width": 151,
+    "height": 188
+  }
+]

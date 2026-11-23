@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "bit-desktop",
+  "name": "BanOS 1984",
+  "english": "1-bit Desktop",
+  "renderer": "reference",
+  "refresh_ms": 66,
+  "background": "#000000",
+  "foreground": "#ffffff",
+  "accent": "#e8643c"
+}

@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "shapes",
+  "name": "几何钟",
+  "english": "Shapes",
+  "renderer": "reference",
+  "refresh_ms": 66,
+  "background": "#000000",
+  "foreground": "#ffffff",
+  "accent": "#e8643c"
+}

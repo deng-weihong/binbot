@@ -1,0 +1,314 @@
+.vocabulary-page .memory-review-plan {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(17rem, 1fr);
+  gap: 0.875rem 2.25rem;
+  margin-top: 1.125rem;
+  padding: 1.5rem 1.75rem 1.125rem;
+}
+.memory-plan-header {
+  grid-column: 1 / -1;
+  flex-wrap: wrap;
+  row-gap: 0.75rem;
+  padding-bottom: 0.875rem;
+  border-bottom: 1px solid var(--line);
+}
+.memory-plan-header > h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--ink);
+}
+.memory-plan-header > h2 > svg {
+  color: var(--accent);
+}
+.memory-plan-header > .button {
+  font-size: 0.8125rem;
+}
+.memory-plan-copy {
+  min-width: 0;
+}
+.memory-plan-copy > p {
+  margin-top: 0.625rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+  line-height: 1.9;
+}
+.memory-plan-counts {
+  display: flex;
+  gap: 2.25rem;
+  margin: 0.5rem 0 0.875rem;
+}
+.memory-plan-counts dt {
+  color: var(--muted);
+  font-size: 0.6875rem;
+}
+.memory-plan-counts dd {
+  margin-top: 0.4375rem;
+  color: var(--ink);
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-weight: 550;
+}
+.memory-plan-counts dd small {
+  margin-left: 0.375rem;
+  color: var(--muted);
+  font-size: 0.5625rem;
+}
+.memory-plan-counts .has-due dd {
+  color: var(--success-ink);
+}
+.memory-plan-copy > .memory-next-session {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  color: var(--success-ink);
+}
+.memory-plan-visual {
+  align-self: center;
+  min-width: 0;
+  padding: 0.875rem 1.125rem;
+  border: 1px solid var(--line);
+  border-radius: 1.125rem;
+  background: var(--surface-subtle);
+}
+.memory-curve-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+.memory-curve-heading small {
+  color: var(--muted);
+  font-size: 0.6875rem;
+}
+.memory-plan-visual svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 9rem;
+  margin-top: 0.625rem;
+  overflow: visible;
+}
+.memory-curve-grid {
+  fill: none;
+  stroke: var(--line);
+  stroke-width: 1;
+}
+.memory-curve-forget {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 2;
+  stroke-dasharray: 4 5;
+  stroke-linecap: round;
+}
+.memory-curve-review {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2.5;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.memory-curve-point {
+  fill: var(--accent);
+  stroke: var(--surface);
+  stroke-width: 1.5;
+}
+.memory-plan-visual text {
+  fill: var(--muted);
+  font-size: 10px;
+  font-family: inherit;
+}
+.memory-curve-legend {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.875rem;
+  margin-top: 0.4375rem;
+  font-size: 0.6875rem;
+  color: var(--muted);
+}
+.memory-curve-legend > span {
+  display: flex;
+  align-items: center;
+  gap: 0.3125rem;
+}
+.memory-curve-legend > span::before {
+  content: "";
+  width: 0.75rem;
+  border-top: 2px solid var(--accent);
+}
+.memory-curve-legend > .forget::before {
+  border-color: var(--muted);
+  border-top-style: dashed;
+}
+.memory-curve-legend small {
+  margin-left: auto;
+  font-size: 0.4375rem;
+  color: var(--muted);
+}
+.memory-plan-details {
+  grid-column: 1 / -1;
+  border-top: 1px solid var(--line);
+  padding-top: 0.8125rem;
+}
+.memory-plan-details > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 0.625rem;
+  cursor: pointer;
+  list-style: none;
+}
+.memory-plan-details > summary::-webkit-details-marker {
+  display: none;
+}
+.memory-plan-details[open] > summary > svg {
+  transform: rotate(180deg);
+}
+.memory-plan-details > ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4375rem;
+  padding: 0;
+  margin: 1rem 0 0.75rem;
+  list-style: none;
+}
+.memory-plan-details li {
+  padding: 0.4375rem 0.6875rem;
+  border: 1px solid var(--accent-border);
+  border-radius: 0.5rem;
+  background: var(--accent-surface);
+  color: var(--success-ink);
+  font-size: 0.5625rem;
+}
+.memory-plan-details > p {
+  color: var(--muted);
+  font-size: 0.625rem;
+  line-height: 1.9;
+}
+.wordbook-review-time {
+  display: block;
+  margin-top: 0.4375rem;
+  color: var(--muted);
+  font-size: 0.6875rem;
+  white-space: nowrap;
+}
+.wordbook-body .feature-toolbar {
+  flex-wrap: wrap;
+}
+.wordbook-body .feature-segments {
+  max-width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+.word-status.new {
+  color: var(--muted);
+  background: var(--surface-subtle);
+}
+.word-status.due {
+  color: var(--success-ink);
+  background: var(--lime);
+}
+.word-status.scheduled {
+  color: var(--success-ink);
+  background: var(--accent-surface);
+}
+.word-memory-timing {
+  padding-top: 1.125rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+.word-memory-timing > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--success-ink);
+  font-size: 0.6875rem;
+  line-height: 1.9;
+}
+.word-memory-timing > p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-top: 0.625rem;
+  color: var(--success-ink);
+  font-size: 0.5625rem;
+  line-height: 1.9;
+}
+.word-memory-timing > ol {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0;
+  margin: 0.875rem 0 0.625rem;
+  list-style: none;
+}
+.word-memory-timing li {
+  flex: 1;
+  height: 0.3125rem;
+  border-radius: 1rem;
+  background: #d8e3d6;
+}
+.word-memory-timing li.is-past {
+  background: #bdcea7;
+}
+.word-memory-timing li.is-current {
+  background: #9fb77f;
+}
+.word-memory-timing > small {
+  color: var(--success-ink);
+  font-size: 0.5rem;
+  line-height: 1.9;
+}
+.wordbook-review-answer {
+  overflow-wrap: anywhere;
+}
+.wordbook-review-answer .dialog-actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.wordbook-review-answer .dialog-actions > .button {
+  min-width: 0;
+  min-height: 2.75rem;
+  padding-inline: 0.5rem;
+  font-size: 0.8125rem;
+}
+.wordbook-review-error {
+  margin-top: 1rem;
+  color: var(--danger-ink);
+  font-size: 0.6875rem;
+  line-height: 1.9;
+}
+@media (max-width: 900px) {
+  .vocabulary-page .memory-review-plan {
+    gap: 1.25rem;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .memory-plan-visual {
+    max-width: 100%;
+  }
+  .memory-plan-counts {
+    justify-content: space-between;
+    gap: 1rem;
+  }
+}
+@media (max-width: 650px) {
+  .vocabulary-page .memory-review-plan {
+    padding: 1.25rem;
+  }
+  .memory-plan-header > .button {
+    min-height: 2.5rem;
+    padding-inline: 0.875rem;
+  }
+  .memory-plan-visual {
+    padding: 0.875rem;
+  }
+  .memory-curve-legend small {
+    margin-left: 0;
+  }
+}

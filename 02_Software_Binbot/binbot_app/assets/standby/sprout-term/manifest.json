@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "sprout-term",
+  "name": "绿芽终端",
+  "english": "Sprout Term",
+  "renderer": "reference",
+  "refresh_ms": 66,
+  "background": "#000000",
+  "foreground": "#ffffff",
+  "accent": "#e8643c"
+}

@@ -1,0 +1,6 @@
+{
+  "schema": 1, "id": "terminal", "name": "复古终端",
+  "description": "时间与日常，安静在线", "renderer": "scene", "refresh_ms": 200,
+  "font": "standby/terminal/VT323-Regular.ttf",
+  "background": "#07110c", "foreground": "#8edbb2", "accent": "#41bd7e"
+}

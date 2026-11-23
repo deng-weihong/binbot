@@ -1,0 +1,8 @@
+/MDK-ARM/Output/
+/MDK-ARM/Objects/
+/MDK-ARM/Listings/
+/MDK-ARM/RTE/
+/MDK-ARM/DebugConfig/
+*.uvoptx
+*.uvguix
+*.uvguix.*

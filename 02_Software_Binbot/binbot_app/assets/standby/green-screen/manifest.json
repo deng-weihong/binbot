@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "green-screen",
+  "name": "绿屏终端",
+  "english": "Green Screen",
+  "renderer": "reference",
+  "refresh_ms": 66,
+  "background": "#000000",
+  "foreground": "#ffffff",
+  "accent": "#e8643c"
+}

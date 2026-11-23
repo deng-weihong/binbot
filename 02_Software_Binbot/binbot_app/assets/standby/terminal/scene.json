@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "layers": [
+    {"type":"text","text":"BINBOT / AMBIENT OS","x":44,"y":38,"w":580,"h":36,"size":29},
+    {"type":"box","x":645,"y":48,"w":12,"h":12,"radius":6,"color":"#41bd7e","blink":true},
+    {"type":"box","x":44,"y":94,"w":632,"h":1,"color":"#254b37"},
+    {"type":"text","text":"> local.time","x":44,"y":132,"w":580,"h":38,"size":30,"color":"#4e956e"},
+    {"type":"text","bind":"time","x":36,"y":179,"w":648,"h":180,"size":174},
+    {"type":"text","bind":"date","x":44,"y":370,"w":620,"h":42,"size":25},
+    {"type":"text","text":"> weather","x":44,"y":449,"w":230,"h":36,"size":28,"color":"#4e956e"},
+    {"type":"text","bind":"weather_line","x":280,"y":449,"w":394,"h":40,"size":27,"align":"right"},
+    {"type":"text","text":"> tasks.done","x":44,"y":512,"w":280,"h":36,"size":28,"color":"#4e956e"},
+    {"type":"text","bind":"todo","x":330,"y":512,"w":344,"h":40,"size":32,"align":"right"},
+    {"type":"box","x":44,"y":590,"w":632,"h":1,"color":"#254b37"},
+    {"type":"text","text":"> ready","x":44,"y":634,"w":180,"h":40,"size":29},
+    {"type":"box","x":220,"y":645,"w":14,"h":23,"color":"#8edbb2","blink":true}
+  ]
+}

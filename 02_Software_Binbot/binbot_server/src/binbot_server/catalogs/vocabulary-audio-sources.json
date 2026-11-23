@@ -1,0 +1,545 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "word": "serene",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=serene&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=serene&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=serene&type=2&le=eng"
+    },
+    {
+      "word": "serene",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=serene&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=serene&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=serene&type=1&le=eng"
+    },
+    {
+      "word": "focus",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=focus&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=focus&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=focus&type=2&le=eng"
+    },
+    {
+      "word": "focus",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=focus&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=focus&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=focus&type=1&le=eng"
+    },
+    {
+      "word": "deliberate",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=deliberate&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=deliberate&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=deliberate&type=2&le=eng"
+    },
+    {
+      "word": "deliberate",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=deliberate&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=deliberate&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=deliberate&type=1&le=eng"
+    },
+    {
+      "word": "resilient",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=resilient&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=resilient&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=resilient&type=2&le=eng"
+    },
+    {
+      "word": "resilient",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=resilient&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=resilient&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=resilient&type=1&le=eng"
+    },
+    {
+      "word": "curious",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=curious&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=curious&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=curious&type=2&le=eng"
+    },
+    {
+      "word": "curious",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=curious&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=curious&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=curious&type=1&le=eng"
+    },
+    {
+      "word": "vivid",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=vivid&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=vivid&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=vivid&type=2&le=eng"
+    },
+    {
+      "word": "vivid",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=vivid&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=vivid&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=vivid&type=1&le=eng"
+    },
+    {
+      "word": "gentle",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=gentle&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=gentle&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=gentle&type=2&le=eng"
+    },
+    {
+      "word": "gentle",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=gentle&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=gentle&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=gentle&type=1&le=eng"
+    },
+    {
+      "word": "insight",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=insight&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=insight&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=insight&type=2&le=eng"
+    },
+    {
+      "word": "insight",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=insight&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=insight&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=insight&type=1&le=eng"
+    },
+    {
+      "word": "routine",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=routine&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=routine&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=routine&type=2&le=eng"
+    },
+    {
+      "word": "routine",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=routine&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=routine&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=routine&type=1&le=eng"
+    },
+    {
+      "word": "balance",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=balance&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=balance&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=balance&type=2&le=eng"
+    },
+    {
+      "word": "balance",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=balance&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=balance&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=balance&type=1&le=eng"
+    },
+    {
+      "word": "mindful",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=mindful&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=mindful&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=mindful&type=2&le=eng"
+    },
+    {
+      "word": "mindful",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=mindful&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=mindful&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=mindful&type=1&le=eng"
+    },
+    {
+      "word": "restore",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=restore&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=restore&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=restore&type=2&le=eng"
+    },
+    {
+      "word": "restore",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=restore&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=restore&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=restore&type=1&le=eng"
+    },
+    {
+      "word": "adapt",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=adapt&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=adapt&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=adapt&type=2&le=eng"
+    },
+    {
+      "word": "adapt",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=adapt&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=adapt&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=adapt&type=1&le=eng"
+    },
+    {
+      "word": "clarify",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=clarify&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=clarify&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=clarify&type=2&le=eng"
+    },
+    {
+      "word": "clarify",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=clarify&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=clarify&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=clarify&type=1&le=eng"
+    },
+    {
+      "word": "sustain",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=sustain&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=sustain&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=sustain&type=2&le=eng"
+    },
+    {
+      "word": "sustain",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=sustain&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=sustain&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=sustain&type=1&le=eng"
+    },
+    {
+      "word": "subtle",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=subtle&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=subtle&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=subtle&type=2&le=eng"
+    },
+    {
+      "word": "subtle",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=subtle&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=subtle&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=subtle&type=1&le=eng"
+    },
+    {
+      "word": "grateful",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=grateful&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=grateful&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=grateful&type=2&le=eng"
+    },
+    {
+      "word": "grateful",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=grateful&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=grateful&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=grateful&type=1&le=eng"
+    },
+    {
+      "word": "steady",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=steady&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=steady&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=steady&type=2&le=eng"
+    },
+    {
+      "word": "steady",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=steady&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=steady&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=steady&type=1&le=eng"
+    },
+    {
+      "word": "reflect",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=reflect&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=reflect&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=reflect&type=2&le=eng"
+    },
+    {
+      "word": "reflect",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=reflect&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=reflect&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=reflect&type=1&le=eng"
+    },
+    {
+      "word": "accomplish",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=accomplish&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=accomplish&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=accomplish&type=2&le=eng"
+    },
+    {
+      "word": "accomplish",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=accomplish&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=accomplish&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=accomplish&type=1&le=eng"
+    },
+    {
+      "word": "explore",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=explore&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=explore&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=explore&type=2&le=eng"
+    },
+    {
+      "word": "explore",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=explore&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=explore&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=explore&type=1&le=eng"
+    },
+    {
+      "word": "patient",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=patient&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=patient&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=patient&type=2&le=eng"
+    },
+    {
+      "word": "patient",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=patient&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=patient&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=patient&type=1&le=eng"
+    },
+    {
+      "word": "inspire",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=inspire&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=inspire&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=inspire&type=2&le=eng"
+    },
+    {
+      "word": "inspire",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=inspire&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=inspire&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=inspire&type=1&le=eng"
+    },
+    {
+      "word": "notice",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=notice&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=notice&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=notice&type=2&le=eng"
+    },
+    {
+      "word": "notice",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=notice&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=notice&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=notice&type=1&le=eng"
+    },
+    {
+      "word": "progress",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=progress&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=progress&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=progress&type=2&le=eng"
+    },
+    {
+      "word": "progress",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=progress&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=progress&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=progress&type=1&le=eng"
+    },
+    {
+      "word": "courage",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=courage&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=courage&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=courage&type=2&le=eng"
+    },
+    {
+      "word": "courage",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=courage&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=courage&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=courage&type=1&le=eng"
+    },
+    {
+      "word": "arrange",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=arrange&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=arrange&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=arrange&type=2&le=eng"
+    },
+    {
+      "word": "arrange",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=arrange&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=arrange&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=arrange&type=1&le=eng"
+    },
+    {
+      "word": "release",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=release&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=release&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=release&type=2&le=eng"
+    },
+    {
+      "word": "release",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=release&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=release&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=release&type=1&le=eng"
+    },
+    {
+      "word": "absorb",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=absorb&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=absorb&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=absorb&type=2&le=eng"
+    },
+    {
+      "word": "absorb",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=absorb&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=absorb&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=absorb&type=1&le=eng"
+    },
+    {
+      "word": "thrive",
+      "accent": "en-US",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=thrive&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=thrive&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=thrive&type=2&le=eng"
+    },
+    {
+      "word": "thrive",
+      "accent": "en-GB",
+      "author": "Youdao Dictionary (individual recording author not supplied)",
+      "sourceUrl": "https://www.youdao.com/result?word=thrive&lang=en",
+      "license": "Not supplied by source; source terms apply",
+      "licenseUrl": "https://www.youdao.com/result?word=thrive&lang=en",
+      "downloadUrl": "https://dict.youdao.com/dictvoice?audio=thrive&type=1&le=eng"
+    }
+  ]
+}

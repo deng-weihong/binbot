@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "layers": [
+    {"type":"text","text":"OUTSIDE, RIGHT NOW","x":48,"y":42,"w":500,"h":30,"size":17,"color":"#617e8d"},
+    {"type":"text","bind":"city","x":48,"y":94,"w":400,"h":50,"size":36,"weight":500},
+    {"type":"image","bind":"weather_icon","x":371,"y":167,"w":300,"h":300},
+    {"type":"text","bind":"temperature","x":40,"y":198,"w":370,"h":200,"size":164,"weight":500},
+    {"type":"text","bind":"weather","x":48,"y":410,"w":490,"h":55,"size":37},
+    {"type":"text","bind":"weather_range","x":48,"y":469,"w":624,"h":32,"size":20,"color":"#617e8d"},
+    {"type":"box","x":48,"y":507,"w":624,"h":1,"color":"#b7cbd4"},
+    {"type":"text","bind":"time","x":48,"y":545,"w":330,"h":100,"size":78,"weight":500},
+    {"type":"text","bind":"date","x":367,"y":588,"w":305,"h":42,"size":22,"align":"right"},
+    {"type":"text","text":"今天，也要好好生活。","x":48,"y":662,"w":600,"h":30,"size":16,"color":"#6c8794"}
+  ]
+}

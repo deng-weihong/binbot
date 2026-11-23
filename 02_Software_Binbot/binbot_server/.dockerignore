@@ -1,0 +1,14 @@
+.git
+.venv
+.env
+.env.*
+runtime
+build
+backups
+.pytest_cache
+**/__pycache__
+**/*.pyc
+tests
+config.toml
+config.device.toml
+data

@@ -1,0 +1,10 @@
+add_library(binbot_agent_ipc STATIC src/ipc.c)
+target_include_directories(binbot_agent_ipc PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include")
+target_compile_options(binbot_agent_ipc PRIVATE -Wall -Wextra -Wpedantic)
+
+if(BUILD_TESTING AND NOT CMAKE_CROSSCOMPILING)
+    add_executable(test_agent_ipc tests/test_ipc.c)
+    target_link_libraries(test_agent_ipc PRIVATE binbot_agent_ipc Threads::Threads)
+    target_compile_options(test_agent_ipc PRIVATE -Wall -Wextra -Wpedantic)
+    add_test(NAME agent_ipc COMMAND test_agent_ipc)
+endif()

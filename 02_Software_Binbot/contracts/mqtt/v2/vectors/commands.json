@@ -1,0 +1,163 @@
+[
+  {
+    "name": "brightness",
+    "valid": true,
+    "command": {
+      "type": "device.command",
+      "schema_version": 2,
+      "boot_id": "11111111111111111111111111111111",
+      "command_id": "00000001-1111-4111-8111-111111111111",
+      "name": "screen.brightness.set",
+      "payload": {
+        "brightness": 35
+      },
+      "issued_at": 1800000000,
+      "expires_at": 1800000015
+    }
+  },
+  {
+    "name": "volume",
+    "valid": true,
+    "command": {
+      "type": "device.command",
+      "schema_version": 2,
+      "boot_id": "11111111111111111111111111111111",
+      "command_id": "00000002-1111-4111-8111-111111111111",
+      "name": "audio.volume.set",
+      "payload": {
+        "volume": 20
+      },
+      "issued_at": 1800000000,
+      "expires_at": 1800000015
+    }
+  },
+  {
+    "name": "brightness-zero",
+    "valid": false,
+    "command": {
+      "type": "device.command",
+      "schema_version": 2,
+      "boot_id": "11111111111111111111111111111111",
+      "command_id": "00000003-1111-4111-8111-111111111111",
+      "name": "screen.brightness.set",
+      "payload": {
+        "brightness": 0
+      },
+      "issued_at": 1800000000,
+      "expires_at": 1800000015
+    }
+  },
+  {
+    "name": "volume-high",
+    "valid": false,
+    "command": {
+      "type": "device.command",
+      "schema_version": 2,
+      "boot_id": "11111111111111111111111111111111",
+      "command_id": "00000004-1111-4111-8111-111111111111",
+      "name": "audio.volume.set",
+      "payload": {
+        "volume": 101
+      },
+      "issued_at": 1800000000,
+      "expires_at": 1800000015
+    }
+  },
+  {
+    "name": "boolean-value",
+    "valid": false,
+    "command": {
+      "type": "device.command",
+      "schema_version": 2,
+      "boot_id": "11111111111111111111111111111111",
+      "command_id": "00000005-1111-4111-8111-111111111111",
+      "name": "screen.brightness.set",
+      "payload": {
+        "brightness": true
+      },
+      "issued_at": 1800000000,
+      "expires_at": 1800000015
+    }
+  },
+  {
+    "name": "extra-payload",
+    "valid": false,
+    "command": {
+      "type": "device.command",
+      "schema_version": 2,
+      "boot_id": "11111111111111111111111111111111",
+      "command_id": "00000006-1111-4111-8111-111111111111",
+      "name": "screen.brightness.set",
+      "payload": {
+        "brightness": 35,
+        "volume": 20
+      },
+      "issued_at": 1800000000,
+      "expires_at": 1800000015
+    }
+  },
+  {
+    "name": "unknown-command",
+    "valid": false,
+    "command": {
+      "type": "device.command",
+      "schema_version": 2,
+      "boot_id": "11111111111111111111111111111111",
+      "command_id": "00000007-1111-4111-8111-111111111111",
+      "name": "device.reboot",
+      "payload": {
+        "brightness": 35
+      },
+      "issued_at": 1800000000,
+      "expires_at": 1800000015
+    }
+  },
+  {
+    "name": "wrong-version",
+    "valid": false,
+    "command": {
+      "type": "device.command",
+      "schema_version": 1,
+      "boot_id": "11111111111111111111111111111111",
+      "command_id": "00000008-1111-4111-8111-111111111111",
+      "name": "screen.brightness.set",
+      "payload": {
+        "brightness": 35
+      },
+      "issued_at": 1800000000,
+      "expires_at": 1800000015
+    }
+  },
+  {
+    "name": "extra-field",
+    "valid": false,
+    "command": {
+      "type": "device.command",
+      "schema_version": 2,
+      "boot_id": "11111111111111111111111111111111",
+      "command_id": "00000009-1111-4111-8111-111111111111",
+      "name": "screen.brightness.set",
+      "payload": {
+        "brightness": 35
+      },
+      "issued_at": 1800000000,
+      "expires_at": 1800000015,
+      "other": true
+    }
+  },
+  {
+    "name": "missing-expiry",
+    "valid": false,
+    "command": {
+      "type": "device.command",
+      "schema_version": 2,
+      "boot_id": "11111111111111111111111111111111",
+      "command_id": "0000000a-1111-4111-8111-111111111111",
+      "name": "screen.brightness.set",
+      "payload": {
+        "brightness": 35
+      },
+      "issued_at": 1800000000
+    }
+  }
+]

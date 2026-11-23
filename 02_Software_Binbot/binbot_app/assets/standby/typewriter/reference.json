@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "layers": [
+    {
+      "type": "art",
+      "parent": -1,
+      "when": "",
+      "src": "art-000.png",
+      "x": 0,
+      "y": 0,
+      "w": 720,
+      "h": 720
+    },
+    {
+      "type": "text",
+      "parent": -1,
+      "when": "",
+      "text": "{time}",
+      "x": 618.265625,
+      "y": 41,
+      "w": 53.734375,
+      "h": 17,
+      "size": 13,
+      "weight": 400,
+      "font": "Space Grotesk",
+      "color": "#f2e6d3",
+      "opacity": 140,
+      "spacing": 3.64,
+      "angle": 0,
+      "numeric": true,
+      "baseline": 51.92,
+      "align": "start",
+      "anchor": 618.265625,
+      "vertical": false,
+      "multiline": false,
+      "lineHeight": 19.5,
+      "shadow": "none"
+    },
+    {
+      "type": "paper",
+      "parent": 0,
+      "x": 183.5,
+      "y": 20,
+      "w": 600,
+      "h": 1100
+    },
+    {
+      "type": "text",
+      "parent": 0,
+      "when": "",
+      "text": "{diary}",
+      "x": 183.5,
+      "y": 79,
+      "w": 600,
+      "h": 392,
+      "size": 24,
+      "weight": 400,
+      "font": "Special Elite",
+      "color": "#2a2420",
+      "opacity": 255,
+      "spacing": 0.48,
+      "angle": 0,
+      "numeric": false,
+      "baseline": 99.16,
+      "align": "start",
+      "anchor": 183.5,
+      "vertical": false,
+      "multiline": true,
+      "lineHeight": 46,
+      "shadow": "rgba(42, 36, 32, 0.5) 0px 0px 1px"
+    },
+    {
+      "type": "art",
+      "parent": -1,
+      "when": "",
+      "src": "art-004.png",
+      "x": 24,
+      "y": 458,
+      "w": 672,
+      "h": 262
+    }
+  ],
+  "groups": [
+    {
+      "type": "typing",
+      "parent": -1,
+      "cx": 0,
+      "cy": 0,
+      "x": 183.5,
+      "y": 20,
+      "duration": 1000,
+      "delay": 0,
+      "frames": [
+        {
+          "at": 0,
+          "transform": "none",
+          "opacity": 1
+        }
+      ]
+    }
+  ]
+}

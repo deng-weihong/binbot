@@ -1,0 +1,101 @@
+menu "Binbot application"
+
+choice BINBOT_APP_PROFILE
+    prompt "Application profile"
+    default BINBOT_APP_ROUND_SCREEN
+    help
+        Select exactly one firmware profile for the shared Binbot project.
+
+    config BINBOT_APP_ROUND_SCREEN
+        bool "round_screen - small round screen"
+
+    config BINBOT_APP_HOLOGRAPHIC_SCREEN
+        bool "holographic_screen - ILI9342C display"
+
+    config BINBOT_APP_SHOWCASE_TURNTABLE
+        bool "showcase_turntable - display turntable"
+
+    config BINBOT_APP_AMBIENT_LIGHT
+        bool "ambient_light - WS2812 lighting"
+endchoice
+
+choice BINBOT_DISPLAY_DRIVER
+    prompt "Display driver"
+    help
+        The display choice is constrained by the selected application profile.
+
+    config BINBOT_DISPLAY_GC9A01A
+        bool "GC9A01A round display (240x240)"
+        depends on BINBOT_APP_ROUND_SCREEN
+
+    config BINBOT_DISPLAY_ILI9342C
+        bool "ILI9342C rectangular display (320x240)"
+        depends on BINBOT_APP_HOLOGRAPHIC_SCREEN
+
+    config BINBOT_DISPLAY_NONE
+        bool "No SPI display"
+        depends on BINBOT_APP_SHOWCASE_TURNTABLE || BINBOT_APP_AMBIENT_LIGHT
+endchoice
+
+menu "Ambient light"
+    depends on BINBOT_APP_AMBIENT_LIGHT
+
+    config BINBOT_LIGHT_GPIO
+        int "WS2812 data GPIO"
+        range 0 21
+        default 19
+
+    config BINBOT_LIGHT_LED_COUNT
+        int "WS2812 LED count"
+        range 1 64
+        default 4
+endmenu
+
+menu "Binbot OTA"
+
+    config BINBOT_UART_OTA_ENABLE
+        bool "Enable UART firmware updates"
+        default y
+        select BOOTLOADER_APP_ROLLBACK_ENABLE
+        help
+            UART1, fixed 460800 8N1. Confirm new firmware after hardware initialization.
+
+    config BINBOT_OTA_ENABLE
+        bool "Enable Wi-Fi OTA service"
+        depends on !BINBOT_UART_OTA_ENABLE && !BINBOT_APP_SHOWCASE_TURNTABLE && !BINBOT_APP_AMBIENT_LIGHT
+        default n
+
+    config BINBOT_OTA_WIFI_SSID
+        string "OTA Wi-Fi SSID"
+        default ""
+
+    config BINBOT_OTA_WIFI_PASSWORD
+        string "OTA Wi-Fi password"
+        default ""
+
+    config BINBOT_OTA_URL
+        string "OTA firmware URL"
+        default ""
+
+    config BINBOT_OTA_MANIFEST_URL
+        string "OTA version manifest URL"
+        default ""
+        help
+            Legacy compatibility setting. The current OTA flow uses the TCP
+            control channel and does not poll this manifest.
+
+    config BINBOT_OTA_TCP_ENABLE
+        bool "Enable persistent TCP OTA control channel"
+        default y
+
+    config BINBOT_OTA_TCP_HOST
+        string "OTA TCP control server host"
+        default ""
+
+    config BINBOT_OTA_TCP_PORT
+        int "OTA TCP control server port"
+        range 1 65535
+        default 8001
+endmenu
+
+endmenu

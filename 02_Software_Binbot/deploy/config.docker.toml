@@ -1,0 +1,29 @@
+[server]
+host = "0.0.0.0"
+port = 8765
+asset_directory = "/var/lib/binbot/assets"
+
+[mqtt]
+enabled = true
+host = "0.0.0.0"
+port = 1883
+
+[auth]
+allow_anonymous = false
+tokens_env = "BINBOT_DEVICE_TOKENS_JSON"
+
+[admin]
+allow_unauthenticated_loopback = false
+
+[storage]
+kind = "sqlite"
+sqlite_path = "/var/lib/binbot/binbot_server.sqlite3"
+
+[component]
+directory = "/var/lib/binbot/components"
+
+[providers]
+asr = "mock"
+llm = "mock"
+tts = "mock"
+settings_directory = "/var/lib/binbot/providers"

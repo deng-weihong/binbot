@@ -1,0 +1,34 @@
+# Isolated local development. Start from this directory so runtime paths resolve here.
+[server]
+host = "127.0.0.1"
+port = 8765
+asset_directory = "runtime/assets"
+
+[mqtt]
+enabled = true
+host = "127.0.0.1"
+port = 1885
+websocket_port = 1886
+heartbeat_timeout_seconds = 20
+command_timeout_seconds = 15
+
+[auth]
+allow_anonymous = false
+tokens_env = "BINBOT_DEVICE_TOKENS_JSON"
+
+[admin]
+allow_unauthenticated_loopback = false
+
+[storage]
+kind = "sqlite"
+sqlite_path = "runtime/binbot.sqlite3"
+
+[component]
+directory = "runtime/component-ota"
+public_origin = "http://localhost:5173"
+
+[providers]
+asr = "mock"
+llm = "mock"
+tts = "mock"
+settings_directory = "runtime/providers"

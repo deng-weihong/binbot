@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "typewriter",
+  "name": "打字机日记",
+  "english": "Typewriter",
+  "renderer": "reference",
+  "refresh_ms": 66,
+  "background": "#000000",
+  "foreground": "#ffffff",
+  "accent": "#e8643c"
+}

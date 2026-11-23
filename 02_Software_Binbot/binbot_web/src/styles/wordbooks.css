@@ -1,0 +1,483 @@
+.wordbooks-panel {
+  min-width: 0;
+}
+.daily-learning-plan {
+  display: grid;
+  gap: 0.65rem;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+.daily-learning-plan label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--ink);
+}
+.daily-learning-plan select {
+  min-width: 6rem;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid var(--control-border);
+  border-radius: 0.65rem;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+}
+.daily-learning-plan progress {
+  width: 100%;
+  height: 0.4rem;
+  border: 0;
+  border-radius: 1rem;
+  accent-color: var(--accent);
+}
+.daily-learning-plan progress::-webkit-progress-bar {
+  background: var(--surface-subtle);
+  border-radius: 1rem;
+}
+.daily-learning-plan progress::-webkit-progress-value {
+  background: var(--accent);
+  border-radius: 1rem;
+}
+.daily-learning-plan small {
+  font-size: 0.65rem;
+  line-height: 1.7;
+}
+.word-pagination,
+.word-pagination > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.word-pagination {
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.6875rem;
+}
+.word-pagination .button {
+  padding: 0.5rem 0.65rem;
+  font-size: 0.6875rem;
+}
+.wordbooks-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  margin: 1.75rem 0 1.25rem;
+}
+.wordbooks-heading h2 {
+  font-size: 1.125rem;
+  font-weight: 650;
+  color: var(--ink);
+}
+.wordbooks-heading > .button {
+  flex-shrink: 0;
+  font-size: 0.6875rem;
+}
+.wordbook-shelf {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 0.875rem;
+  max-height: 17rem;
+  overflow-y: auto;
+  padding: 0.125rem;
+  scrollbar-width: thin;
+}
+.wordbook-cover {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  min-width: 0;
+  padding: 1.25rem;
+  text-align: left;
+  border: 1px solid var(--border);
+  border-radius: 1.375rem;
+  background: var(--surface);
+}
+.wordbook-cover:hover {
+  border-color: var(--control-border);
+}
+.wordbook-cover.is-selected {
+  border-color: var(--accent-border);
+  background: var(--accent-surface);
+}
+.wordbook-cover-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3.5rem;
+  border-left: 3px solid var(--border);
+  border-radius: 0.25rem 0.75rem 0.75rem 0.25rem;
+  background: var(--surface-subtle);
+  color: var(--muted);
+}
+.wordbook-cover-icon.is-saved {
+  border-color: var(--accent-border);
+  background: var(--accent-surface);
+  color: var(--success-ink);
+}
+.wordbook-cover-copy {
+  min-width: 0;
+  flex: 1;
+}
+.wordbook-cover-copy > strong {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.875rem;
+  font-weight: 550;
+  color: var(--ink);
+}
+.wordbook-cover-copy > small {
+  display: block;
+  margin-top: 0.625rem;
+  font-size: 0.6875rem;
+  color: var(--muted);
+}
+.wordbook-cover-choice {
+  flex-shrink: 0;
+  color: var(--muted);
+}
+.wordbook-cover.is-selected .wordbook-cover-choice {
+  display: grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: var(--lime);
+  color: var(--success-ink);
+}
+.wordbook-heading-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+}
+.wordbook-heading-actions > .button {
+  padding: 0.625rem 0.875rem;
+  font-size: 0.625rem;
+}
+.wordbook-body .feature-card-heading {
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.wordbook-body .word-table td:first-child {
+  width: 32%;
+}
+.wordbook-table td:nth-child(2) {
+  overflow-wrap: anywhere;
+}
+.wordbook-empty .button {
+  margin-top: 1.25rem;
+}
+.word-save {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.6875rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.8125rem;
+  color: var(--success-ink);
+  background: var(--accent-surface);
+  font-size: 0.625rem;
+  white-space: nowrap;
+}
+.word-save.is-saved {
+  background: var(--accent-surface);
+  border-color: var(--accent-border);
+  color: var(--success-ink);
+}
+.word-save.icon-only {
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border-color: transparent;
+  border-radius: 0.625rem;
+  color: var(--muted);
+  background: transparent;
+}
+.word-save.icon-only:hover {
+  color: var(--muted);
+  background: var(--surface-hover);
+}
+.word-save.icon-only.is-saved {
+  color: var(--success-ink);
+}
+.word-detail > .word-save {
+  margin-top: 1.25rem;
+}
+.word-row-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.125rem;
+}
+.wordbook-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.125rem;
+  min-height: 17rem;
+  padding: 2.5rem 1.75rem;
+  text-align: center;
+  background: var(--accent-surface);
+  color: var(--success-ink);
+}
+.wordbook-placeholder h3 {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--success-ink);
+}
+.wordbook-placeholder p {
+  font-size: 0.6875rem;
+  line-height: 1.9;
+  color: var(--success-ink);
+}
+.wordbook-dialog-tabs {
+  display: flex;
+  gap: 0.375rem;
+  width: fit-content;
+  padding: 0.25rem;
+  margin: 1.5rem 0;
+  border-radius: 0.875rem;
+  background: var(--surface-subtle);
+}
+.wordbook-dialog-tabs > button {
+  padding: 0.625rem 0.875rem;
+  border-radius: 0.6875rem;
+  font-size: 0.6875rem;
+  color: var(--muted);
+}
+.wordbook-dialog-tabs > button[aria-pressed="true"] {
+  color: var(--surface);
+  background: var(--ink);
+}
+.wordbook-pick-search {
+  width: 100%;
+  margin-bottom: 0.875rem;
+}
+.wordbook-picker {
+  max-height: 18rem;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  overscroll-behavior-y: contain;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+}
+.wordbook-picker > label {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  padding: 0.875rem 1rem;
+  cursor: pointer;
+}
+.wordbook-picker > label + label {
+  border-top: 1px solid var(--surface-subtle);
+}
+.wordbook-picker > label:hover {
+  background: var(--surface-subtle);
+}
+.wordbook-picker > label.is-added {
+  opacity: 0.5;
+}
+.wordbook-picker input {
+  width: 1rem;
+  height: 1rem;
+  accent-color: var(--focus-color);
+}
+.wordbook-picker > label > span {
+  flex: 1;
+  min-width: 0;
+}
+.wordbook-picker strong {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 450;
+  color: var(--muted);
+}
+.wordbook-picker small {
+  display: block;
+  margin-top: 0.375rem;
+  font-size: 0.625rem;
+  color: var(--muted);
+}
+.wordbook-picker em {
+  font-size: 0.625rem;
+  font-style: normal;
+  color: var(--success-ink);
+}
+.wordbook-extra {
+  border-top: 1px solid var(--surface-subtle);
+  padding-top: 1rem;
+}
+.wordbook-extra > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25rem 0;
+  font-size: 0.6875rem;
+  color: var(--muted);
+  list-style: none;
+  cursor: pointer;
+}
+.wordbook-extra > summary::-webkit-details-marker {
+  display: none;
+}
+.wordbook-extra[open] > summary {
+  margin-bottom: 1rem;
+}
+.wordbook-extra[open] > summary > svg {
+  transform: rotate(180deg);
+}
+.wordbook-error {
+  margin: 0.875rem 0;
+  color: var(--danger-ink);
+  font-size: 0.6875rem;
+  line-height: 1.9;
+}
+.wordbook-dialog-hint {
+  margin: 1rem 0;
+  color: var(--muted);
+  font-size: 0.75rem;
+  line-height: 1.9;
+}
+.wordbook-review-progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.75rem 0 0.75rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+.wordbook-review-progress strong {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--muted);
+}
+.wordbook-review-meter {
+  height: 0.3125rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: var(--line);
+}
+.wordbook-review-meter > i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--accent);
+}
+.wordbook-review > h2 {
+  margin-top: 2rem;
+  font-size: 2.25rem;
+  line-height: 1.5;
+  font-weight: 600;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+.wordbook-review > .word-phonetic {
+  color: var(--muted);
+}
+.wordbook-reveal {
+  display: flex;
+  margin: 2.5rem auto 1rem;
+  font-size: 0.75rem;
+}
+.wordbook-review-answer h3 {
+  margin: 1.75rem 0 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.9;
+  color: var(--ink);
+}
+.wordbook-review-answer p {
+  color: var(--muted);
+  font-size: 0.875rem;
+  line-height: 1.9;
+}
+.wordbook-review-answer small {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.6875rem;
+  line-height: 1.9;
+  color: var(--muted);
+}
+.wordbook-review-finished {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.125rem;
+  padding: 2.5rem 0 1rem;
+  text-align: center;
+}
+.wordbook-review-finished > span {
+  display: grid;
+  place-items: center;
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 1.5rem;
+  background: var(--accent-surface);
+  color: var(--success-ink);
+}
+.wordbook-review-finished > h2 {
+  font-size: 1.25rem;
+  font-weight: 450;
+  color: var(--muted);
+}
+.wordbook-review-finished > p {
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+.wordbook-review-finished > small {
+  color: var(--muted);
+  font-size: 0.6875rem;
+}
+.wordbook-review-finished > .button {
+  margin-top: 1rem;
+}
+@media (max-width: 650px) {
+  .wordbooks-heading {
+    gap: 0.75rem;
+    margin-block: 0.75rem;
+  }
+  .wordbook-shelf {
+    grid-template-columns: minmax(0, 1fr);
+    max-height: 22rem;
+  }
+  .wordbook-cover {
+    padding: 0.75rem 1.125rem;
+  }
+  .wordbook-body .feature-card-heading > div:first-child {
+    width: 100%;
+  }
+  .wordbook-heading-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .wordbook-body .word-table th:last-child,
+  .wordbook-body .word-table td:last-child {
+    display: table-cell;
+  }
+  .wordbook-body .word-table-wrap {
+    max-width: 100%;
+  }
+  .wordbook-body .word-table {
+    min-width: 24rem;
+  }
+  .wordbook-placeholder {
+    min-height: 11rem;
+    padding: 1.75rem;
+  }
+  .wordbook-review > h2 {
+    font-size: 1.875rem;
+  }
+}

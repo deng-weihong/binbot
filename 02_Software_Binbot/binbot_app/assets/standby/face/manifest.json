@@ -1,0 +1,5 @@
+{
+  "schema": 1, "id": "face", "name": "小伴表情",
+  "description": "眨眼、微笑与陪伴", "renderer": "face",
+  "background": "#000000", "foreground": "#ffffff", "accent": "#e8643c"
+}

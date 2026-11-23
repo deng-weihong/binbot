@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "type": {
+      "const": "device.control.state",
+      "title": "Type",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 2,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "boot_id": {
+      "pattern": "^[0-9a-f]{32}$",
+      "title": "Boot Id",
+      "type": "string"
+    },
+    "revision": {
+      "maximum": 4294967295,
+      "minimum": 0,
+      "title": "Revision",
+      "type": "integer"
+    },
+    "ready": {
+      "title": "Ready",
+      "type": "boolean"
+    },
+    "brightness": {
+      "anyOf": [
+        {
+          "maximum": 100,
+          "minimum": 1,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Brightness"
+    },
+    "volume": {
+      "anyOf": [
+        {
+          "maximum": 100,
+          "minimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Volume"
+    },
+    "capabilities": {
+      "items": {
+        "enum": [
+          "control_v2",
+          "brightness_v1",
+          "volume_v1",
+          "workspace_v1",
+          "camera_publish_v2"
+        ],
+        "type": "string"
+      },
+      "maxItems": 5,
+      "title": "Capabilities",
+      "type": "array"
+    },
+    "features": {
+      "anyOf": [
+        {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Features"
+    },
+    "system": {
+      "anyOf": [
+        {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "System"
+    },
+    "learning_events": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "maxItems": 32,
+      "title": "Learning Events",
+      "type": "array"
+    }
+  },
+  "required": [
+    "type",
+    "schema_version",
+    "boot_id",
+    "revision",
+    "ready",
+    "capabilities"
+  ],
+  "title": "ControlState",
+  "type": "object"
+}

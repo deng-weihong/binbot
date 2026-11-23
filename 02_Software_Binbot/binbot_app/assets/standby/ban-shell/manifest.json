@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "ban-shell",
+  "name": "小伴终端",
+  "english": "Ban Shell",
+  "renderer": "reference",
+  "refresh_ms": 66,
+  "background": "#000000",
+  "foreground": "#ffffff",
+  "accent": "#e8643c"
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "type": {
+      "const": "device.control.result",
+      "title": "Type",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 2,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "boot_id": {
+      "pattern": "^[0-9a-f]{32}$",
+      "title": "Boot Id",
+      "type": "string"
+    },
+    "command_id": {
+      "maxLength": 36,
+      "minLength": 36,
+      "title": "Command Id",
+      "type": "string"
+    },
+    "success": {
+      "title": "Success",
+      "type": "boolean"
+    },
+    "message": {
+      "maxLength": 256,
+      "title": "Message",
+      "type": "string"
+    }
+  },
+  "required": [
+    "type",
+    "schema_version",
+    "boot_id",
+    "command_id",
+    "success",
+    "message"
+  ],
+  "title": "ControlResult",
+  "type": "object"
+}

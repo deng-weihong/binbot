@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "ink-wash",
+  "name": "墨色",
+  "english": "Ink Wash",
+  "renderer": "reference",
+  "refresh_ms": 66,
+  "background": "#000000",
+  "foreground": "#ffffff",
+  "accent": "#e8643c"
+}

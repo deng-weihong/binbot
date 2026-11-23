@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "orbit-deck",
+  "name": "轨道舱",
+  "english": "Orbit Deck",
+  "renderer": "reference",
+  "refresh_ms": 66,
+  "background": "#000000",
+  "foreground": "#ffffff",
+  "accent": "#e8643c"
+}

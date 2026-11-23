@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "sundial",
+  "name": "日晷",
+  "english": "Sundial",
+  "renderer": "reference",
+  "refresh_ms": 66,
+  "background": "#000000",
+  "foreground": "#ffffff",
+  "accent": "#e8643c"
+}

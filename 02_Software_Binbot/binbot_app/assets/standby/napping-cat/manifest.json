@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "napping-cat",
+  "name": "猫咪午睡",
+  "english": "Napping Cat",
+  "renderer": "reference",
+  "refresh_ms": 66,
+  "background": "#000000",
+  "foreground": "#ffffff",
+  "accent": "#e8643c"
+}

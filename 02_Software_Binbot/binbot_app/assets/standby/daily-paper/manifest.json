@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "daily-paper",
+  "name": "小伴日报",
+  "english": "Daily Paper",
+  "renderer": "reference",
+  "refresh_ms": 66,
+  "background": "#000000",
+  "foreground": "#ffffff",
+  "accent": "#e8643c"
+}

@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "sticky-notes",
+  "name": "便签墙",
+  "english": "Sticky Notes",
+  "renderer": "reference",
+  "refresh_ms": 66,
+  "background": "#000000",
+  "foreground": "#ffffff",
+  "accent": "#e8643c"
+}

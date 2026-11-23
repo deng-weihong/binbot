@@ -1,0 +1,198 @@
+[server]
+host = "127.0.0.1"
+port = 8765
+log_level = "INFO"
+handshake_timeout_seconds = 5.0
+max_control_bytes = 16384
+max_audio_payload_bytes = 4096
+asset_directory = "runtime/assets"
+max_gif_bytes = 16777216
+ffmpeg_path = "/usr/bin/ffmpeg"
+video_start_timeout_seconds = 10.0
+
+[mqtt]
+enabled = false
+host = "127.0.0.1"
+port = 1883
+# Reserved for compatibility; the console connects over HTTP, not MQTT WS.
+websocket_port = 1884
+max_connections = 128
+heartbeat_timeout_seconds = 20
+command_timeout_seconds = 15
+# Set both for TLS. MQTT always requires a per-device token from auth.tokens.
+tls_cert_file = ""
+tls_key_file = ""
+
+[auth]
+allow_anonymous = false
+# Production can inject tokens through BINBOT_DEVICE_TOKENS_JSON.
+tokens_env = "BINBOT_DEVICE_TOKENS_JSON"
+
+[auth.tokens]
+# binbot-001 = "replace-with-a-random-device-token"
+
+[admin]
+allow_unauthenticated_loopback = false
+# The console signs in with these environment-backed credentials.
+username_env = "BINBOT_ADMIN_USERNAME"
+password_env = "BINBOT_ADMIN_PASSWORD"
+remember_days = 30
+# Legacy fallback for existing installations that have not set password_env.
+token_env = "BINBOT_ADMIN_TOKEN"
+
+[audio]
+uplink_sample_rate = 16000
+uplink_frame_ms = 20
+downlink_sample_rate = 24000
+downlink_frame_ms = 20
+downlink_bitrate = 32000
+
+[component]
+# Use a persistent directory, mounted into the Server when running in Docker.
+directory = "runtime/component-ota"
+# Client-accessible origin of the main Server (not the MCP adapter).
+public_origin = "https://binbot.example.com"
+token_env = "BINBOT_MCP_SERVICE_TOKEN"
+scopes = ["device:read", "firmware:read", "firmware:write", "component:ota:write"]
+# Empty means all devices. Set an explicit list for restricted deployments.
+device_ids = []
+max_firmware_bytes = 2097152
+
+[pipeline]
+max_turn_audio_seconds = 30.0
+asr_timeout_seconds = 30.0
+llm_timeout_seconds = 60.0
+tts_timeout_seconds = 60.0
+tts_concurrency = 2
+max_tts_segments = 64
+max_tts_segment_bytes = 1440000
+
+[vad]
+# Negotiated with server_vad_v1 devices; legacy devices retain local endpoints.
+enabled = true
+threshold = 0.5
+threshold_low = 0.3
+end_silence_ms = 1800
+# Changed ASR text confirms speech and protects quiet words missed by Silero.
+transcript_grace_ms = 2400
+start_timeout_ms = 10000
+
+[conversation]
+max_history_messages = 20
+first_sentence_chars = 12
+system_prompt = """
+你是 BinBot，一个运行在桌面智能终端上的语音助手。
+回答应自然、准确、简洁，适合直接通过语音播报。
+"""
+
+[storage]
+kind = "sqlite"
+sqlite_path = "runtime/binbot.sqlite3"
+max_commands = 500
+max_tasks = 500
+
+[scheduler]
+poll_interval_seconds = 1.0
+batch_size = 10
+
+[daily_report]
+enabled = true
+timezone = "Asia/Shanghai"
+generate_at = "23:00"
+retention_days = 90
+max_context_chars = 24000
+
+[feishu]
+# Legacy migration source only: enabled=true also requires an explicit device_id.
+# New installations configure Feishu in each device's Console settings; this
+# global switch is not required for device-owned connections.
+enabled = false
+mode = "long_connection"
+app_id = ""
+# Keep App Secret in the service environment, never in this file.
+app_secret_env = "BINBOT_FEISHU_APP_SECRET"
+verification_token_env = "BINBOT_FEISHU_VERIFICATION_TOKEN"
+base_url = "https://open.feishu.cn"
+receive_id_type = "chat_id"
+# Explicit migration target. An empty value never distributes a global grant.
+device_id = ""
+allow_control = false
+request_timeout_seconds = 10.0
+
+[feishu.calendar]
+enabled = false
+calendar_id = ""
+sync_interval_seconds = 60 # 0 disables polling; initial and manual sync remain available
+max_events = 16
+# Legacy compatibility field; environment access tokens are not imported into
+# device grants. Authorize each account from the device's Console settings.
+user_access_token_env = "BINBOT_FEISHU_USER_ACCESS_TOKEN"
+# Migration source for the explicitly targeted device. New grants are stored
+# under component.directory/device-feishu/<hashed device ID>/ instead.
+token_file = "/tmp/binbot_feishu_user_token.json"
+oauth_scopes = ["calendar:calendar:readonly", "calendar:calendar.event:create"]
+# Legacy compatibility field; device calendars currently use polling/manual sync.
+subscribe = true
+
+[agent]
+enabled = true
+max_context_chars = 12000
+require_control_approval = true
+max_tool_rounds = 4
+max_memory_items = 5
+
+[providers]
+asr = "mock"
+llm = "mock"
+tts = "mock"
+# Voice can use an end-to-end model independently of the text LLM.
+voice = "pipeline"
+# Optional persistent override for provider-settings.json; defaults to component.directory.
+settings_directory = ""
+
+[providers.mock]
+transcript = "你好，我是来自 BinBot 的测试语音。"
+response = "你好，我是 BinBot。现在服务器、会话状态和流式音频链路已经开始工作。"
+
+# OpenAI-compatible providers are selected independently. Secrets are read from the
+# environment variable named by api_key_env; never store API keys in this file.
+[providers.openai]
+base_url = "https://api.openai.com/v1"
+api_key_env = "BINBOT_MODEL_API_KEY"
+asr_model = "whisper-1"
+llm_model = "gpt-4o-mini"
+# chat_completions for OpenAI-compatible Chat APIs; responses for Ark Responses API.
+llm_api = "chat_completions"
+# Ark Chat and Responses support disabled/enabled/auto. Leave empty elsewhere.
+llm_thinking = ""
+tts_model = "gpt-4o-mini-tts"
+tts_voice = "alloy"
+request_timeout_seconds = 60.0
+
+# Volcengine Speech adapters. Select "volcengine" independently for asr/tts
+# and provide BINBOT_VOLC_API_KEY in the service environment. Never commit it.
+[providers.volcengine]
+asr_endpoint = "wss://openspeech.bytedance.com/api/v3/sauc/bigmodel_async"
+tts_endpoint = "wss://openspeech.bytedance.com/api/v3/tts/unidirectional/stream"
+api_key_env = "BINBOT_VOLC_API_KEY"
+# Optional per-service overrides, useful when ASR and TTS keys are managed separately.
+asr_api_key_env = ""
+tts_api_key_env = ""
+asr_resource_id = "volc.seedasr.sauc.duration"
+tts_resource_id = "seed-tts-2.0"
+tts_model = "seed-tts-2.0-standard"
+# Set this to the voice ID from the Volcengine console when tts = "volcengine".
+tts_speaker = ""
+asr_packet_ms = 200
+request_timeout_seconds = 60.0
+max_audio_seconds = 60.0
+max_message_bytes = 4194304
+
+[providers.seeduplex]
+endpoint = "wss://openspeech.bytedance.com/api/v3/duplex/realtime/dialogue"
+model = "1.2.6.1"
+voice = "zh_male_xiaotian_jupiter_bigtts"
+api_key_env = "BINBOT_SEEDUPLEX_API_KEY"
+connect_timeout_seconds = 15.0
+idle_timeout_seconds = 90.0
+max_message_bytes = 4194304

@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "penguin-walk",
+  "name": "企鹅散步",
+  "english": "Penguin Walk",
+  "renderer": "reference",
+  "refresh_ms": 66,
+  "background": "#000000",
+  "foreground": "#ffffff",
+  "accent": "#e8643c"
+}

@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "layers": [
+    {"type":"text","text":"A LITTLE MOMENT","x":54,"y":56,"w":500,"h":30,"size":17,"color":"#7c7c70"},
+    {"type":"box","x":644,"y":61,"w":14,"h":14,"radius":7,"color":"#c86342"},
+    {"type":"text","bind":"time","x":20,"y":208,"w":680,"h":218,"size":190,"weight":500,"align":"center"},
+    {"type":"text","bind":"date","x":60,"y":434,"w":600,"h":42,"size":25,"align":"center","color":"#74776a"},
+    {"type":"box","x":54,"y":578,"w":612,"h":1,"color":"#cfcec3"},
+    {"type":"text","bind":"city","x":54,"y":609,"w":240,"h":34,"size":22},
+    {"type":"text","bind":"weather_line","x":300,"y":609,"w":366,"h":34,"size":22,"align":"right"},
+    {"type":"text","text":"慢慢来，也很好。","x":54,"y":657,"w":500,"h":30,"size":16,"color":"#8a8b80"}
+  ]
+}

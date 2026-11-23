@@ -1,0 +1,194 @@
+[
+  {
+    "id": "face",
+    "name": "小伴表情",
+    "english": "Expressions",
+    "preview": "/watch-faces/face.png"
+  },
+  {
+    "id": "pixel-room",
+    "name": "小伴的房间",
+    "english": "Pixel Room",
+    "preview": "/watch-faces/pixel-room.png"
+  },
+  {
+    "id": "pixel-sky",
+    "name": "一日天色",
+    "english": "Pixel Sky",
+    "preview": "/watch-faces/pixel-sky.png"
+  },
+  {
+    "id": "dot-matrix",
+    "name": "点阵跑马灯",
+    "english": "Dot Matrix",
+    "preview": "/watch-faces/dot-matrix.png"
+  },
+  {
+    "id": "pixel-buddy",
+    "name": "小伴养成",
+    "english": "Pixel Buddy",
+    "preview": "/watch-faces/pixel-buddy.png"
+  },
+  {
+    "id": "paper-cut",
+    "name": "纸间小伴",
+    "english": "Paper Cut",
+    "preview": "/watch-faces/paper-cut.png"
+  },
+  {
+    "id": "sticky-notes",
+    "name": "便签墙",
+    "english": "Sticky Notes",
+    "preview": "/watch-faces/sticky-notes.png"
+  },
+  {
+    "id": "ink-wash",
+    "name": "墨色",
+    "english": "Ink Wash",
+    "preview": "/watch-faces/ink-wash.png"
+  },
+  {
+    "id": "shapes",
+    "name": "几何钟",
+    "english": "Shapes",
+    "preview": "/watch-faces/shapes.png"
+  },
+  {
+    "id": "napping-cat",
+    "name": "猫咪午睡",
+    "english": "Napping Cat",
+    "preview": "/watch-faces/napping-cat.png"
+  },
+  {
+    "id": "penguin-walk",
+    "name": "企鹅散步",
+    "english": "Penguin Walk",
+    "preview": "/watch-faces/penguin-walk.png"
+  },
+  {
+    "id": "peeking-shiba",
+    "name": "柴犬探头",
+    "english": "Peeking Shiba",
+    "preview": "/watch-faces/peeking-shiba.png"
+  },
+  {
+    "id": "hamster-wheel",
+    "name": "仓鼠跑轮",
+    "english": "Hamster Wheel",
+    "preview": "/watch-faces/hamster-wheel.png"
+  },
+  {
+    "id": "lava-lamp",
+    "name": "熔岩灯",
+    "english": "Lava Lamp",
+    "preview": "/watch-faces/lava-lamp.png"
+  },
+  {
+    "id": "particle-time",
+    "name": "粒子时间",
+    "english": "Particle Time",
+    "preview": "/watch-faces/particle-time.png"
+  },
+  {
+    "id": "departures",
+    "name": "小伴航站楼",
+    "english": "Departures",
+    "preview": "/watch-faces/departures.png"
+  },
+  {
+    "id": "typewriter",
+    "name": "打字机日记",
+    "english": "Typewriter",
+    "preview": "/watch-faces/typewriter.png"
+  },
+  {
+    "id": "nixie-tubes",
+    "name": "辉光管",
+    "english": "Nixie Tubes",
+    "preview": "/watch-faces/nixie-tubes.png"
+  },
+  {
+    "id": "dial-radio",
+    "name": "调频收音机",
+    "english": "Dial Radio",
+    "preview": "/watch-faces/dial-radio.png"
+  },
+  {
+    "id": "bit-desktop",
+    "name": "BanOS 1984",
+    "english": "1-bit Desktop",
+    "preview": "/watch-faces/bit-desktop.png"
+  },
+  {
+    "id": "daily-paper",
+    "name": "小伴日报",
+    "english": "Daily Paper",
+    "preview": "/watch-faces/daily-paper.png"
+  },
+  {
+    "id": "ban-shell",
+    "name": "小伴终端",
+    "english": "Ban Shell",
+    "preview": "/watch-faces/ban-shell.png"
+  },
+  {
+    "id": "sprout-term",
+    "name": "绿芽终端",
+    "english": "Sprout Term",
+    "preview": "/watch-faces/sprout-term.png"
+  },
+  {
+    "id": "neon-kitty",
+    "name": "霓虹猫猫",
+    "english": "Neon Kitty",
+    "preview": "/watch-faces/neon-kitty.png"
+  },
+  {
+    "id": "pixel-city",
+    "name": "像素夜城",
+    "english": "Pixel City",
+    "preview": "/watch-faces/pixel-city.png"
+  },
+  {
+    "id": "neon-alley",
+    "name": "霓虹横丁",
+    "english": "Neon Alley",
+    "preview": "/watch-faces/neon-alley.png"
+  },
+  {
+    "id": "circuit-core",
+    "name": "芯片核心",
+    "english": "Circuit Core",
+    "preview": "/watch-faces/circuit-core.png"
+  },
+  {
+    "id": "aquarium",
+    "name": "小鱼缸",
+    "english": "Aquarium",
+    "preview": "/watch-faces/aquarium.png"
+  },
+  {
+    "id": "latte",
+    "name": "咖啡时光",
+    "english": "Latte",
+    "preview": "/watch-faces/latte.png"
+  },
+  {
+    "id": "sundial",
+    "name": "日晷",
+    "english": "Sundial",
+    "preview": "/watch-faces/sundial.png"
+  },
+  {
+    "id": "hourglass",
+    "name": "沙漏",
+    "english": "Hourglass",
+    "preview": "/watch-faces/hourglass.png"
+  },
+  {
+    "id": "little-grove",
+    "name": "小森林",
+    "english": "Little Grove",
+    "preview": "/watch-faces/little-grove.png"
+  }
+]

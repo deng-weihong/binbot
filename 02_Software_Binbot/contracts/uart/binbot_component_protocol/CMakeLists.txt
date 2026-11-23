@@ -1,0 +1,22 @@
+cmake_minimum_required(VERSION 3.10)
+project(binbot_component_protocol VERSION 1.0.0 LANGUAGES C)
+
+if(CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
+    include(CTest)
+endif()
+
+add_library(binbot_component_protocol STATIC src/protocol.c src/ota_receiver.c src/file_receiver.c src/light.c src/pen.c src/pen_render.c)
+target_include_directories(binbot_component_protocol PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include")
+target_compile_features(binbot_component_protocol PUBLIC c_std_11)
+target_compile_options(binbot_component_protocol PRIVATE -Wall -Wextra -Wpedantic)
+
+if(BUILD_TESTING AND NOT CMAKE_CROSSCOMPILING)
+    add_executable(test_component_pen tests/test_pen.c)
+    target_link_libraries(test_component_pen PRIVATE binbot_component_protocol)
+    target_compile_options(test_component_pen PRIVATE -Wall -Wextra -Wpedantic -UNDEBUG)
+    add_test(NAME component_pen COMMAND test_component_pen)
+    add_executable(test_component_protocol tests/test_protocol.c)
+    target_link_libraries(test_component_protocol PRIVATE binbot_component_protocol)
+    target_compile_options(test_component_protocol PRIVATE -Wall -Wextra -Wpedantic)
+    add_test(NAME component_protocol COMMAND test_component_protocol)
+endif()

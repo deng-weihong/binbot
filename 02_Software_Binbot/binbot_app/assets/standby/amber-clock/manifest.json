@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "amber-clock",
+  "name": "琥珀时钟",
+  "english": "Amber Clock",
+  "renderer": "reference",
+  "refresh_ms": 66,
+  "background": "#000000",
+  "foreground": "#ffffff",
+  "accent": "#e8643c"
+}

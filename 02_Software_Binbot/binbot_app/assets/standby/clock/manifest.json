@@ -1,0 +1,5 @@
+{
+  "schema": 1, "id": "clock", "name": "平静时钟",
+  "description": "给时间一点留白", "renderer": "scene", "refresh_ms": 1000,
+  "background": "#eeeae2", "foreground": "#282922", "accent": "#c86342"
+}

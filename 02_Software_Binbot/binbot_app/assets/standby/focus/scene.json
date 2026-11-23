@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "layers": [
+    {"type":"text","text":"ONE THING AT A TIME","x":48,"y":44,"w":600,"h":30,"size":17,"color":"#8fa499"},
+    {"type":"text","bind":"focus_state","x":48,"y":124,"w":624,"h":50,"size":28,"color":"#b7ca92"},
+    {"type":"text","bind":"focus","x":24,"y":208,"w":672,"h":195,"size":160,"weight":500,"align":"center"},
+    {"type":"text","text":"下一件小事","x":48,"y":457,"w":400,"h":35,"size":20,"color":"#8fa499"},
+    {"type":"text","bind":"next_todo","x":48,"y":507,"w":624,"h":48,"size":29},
+    {"type":"progress","bind":"todo_progress","x":48,"y":584,"w":624,"h":6,"radius":3,"color":"#b7ca92","track_color":"#3a4d42"},
+    {"type":"text","bind":"todo","x":48,"y":616,"w":260,"h":40,"size":23,"color":"#8fa499"},
+    {"type":"text","bind":"time","x":430,"y":616,"w":242,"h":40,"size":26,"align":"right","color":"#8fa499"}
+  ]
+}

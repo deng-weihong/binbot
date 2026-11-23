@@ -1,0 +1,16 @@
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(CONTROL_CJSON REQUIRED IMPORTED_TARGET libcjson)
+add_library(binbot_control_ipc STATIC src/ipc.c src/service.c)
+target_include_directories(binbot_control_ipc PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include")
+target_link_libraries(binbot_control_ipc PUBLIC PkgConfig::CONTROL_CJSON m)
+target_compile_options(binbot_control_ipc PRIVATE -Wall -Wextra -Wpedantic)
+if(BUILD_TESTING AND NOT CMAKE_CROSSCOMPILING)
+    set(BINBOT_CONTROL_CONTRACTS_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../../../contracts/mqtt/v2"
+        CACHE PATH "MQTT v2 contracts directory")
+    add_executable(test_control_service tests/test_control_service.c)
+    target_link_libraries(test_control_service PRIVATE binbot_control_ipc)
+    target_compile_options(test_control_service PRIVATE -Wall -Wextra -Wpedantic -UNDEBUG)
+    target_compile_definitions(test_control_service PRIVATE
+        BB_CONTROL_VECTORS_PATH="${BINBOT_CONTROL_CONTRACTS_DIR}/vectors/commands.json")
+    add_test(NAME control_service COMMAND test_control_service)
+endif()

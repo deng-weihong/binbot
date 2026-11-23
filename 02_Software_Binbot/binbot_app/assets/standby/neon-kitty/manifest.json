@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "neon-kitty",
+  "name": "霓虹猫猫",
+  "english": "Neon Kitty",
+  "renderer": "reference",
+  "refresh_ms": 66,
+  "background": "#000000",
+  "foreground": "#ffffff",
+  "accent": "#e8643c"
+}

@@ -1,0 +1,444 @@
+{
+  "schema": 1,
+  "layers": [
+    {
+      "type": "art",
+      "parent": -1,
+      "when": "",
+      "src": "art-000.png",
+      "x": 0,
+      "y": 0,
+      "w": 720,
+      "h": 720
+    },
+    {
+      "type": "text",
+      "parent": -1,
+      "when": "",
+      "text": "{hour}",
+      "x": 48,
+      "y": 44,
+      "w": 260,
+      "h": 135,
+      "size": 112,
+      "weight": 600,
+      "font": "Fredoka",
+      "color": "#2f5a45",
+      "opacity": 255,
+      "spacing": -2.8,
+      "angle": 0,
+      "numeric": true,
+      "baseline": 138.07999999999998,
+      "align": "start",
+      "anchor": 48,
+      "vertical": false,
+      "multiline": false,
+      "lineHeight": 112,
+      "shadow": "none"
+    },
+    {
+      "type": "art",
+      "parent": 0,
+      "when": "",
+      "src": "art-002.png",
+      "x": 152,
+      "y": 100,
+      "w": 20,
+      "h": 54
+    },
+    {
+      "type": "text",
+      "parent": -1,
+      "when": "",
+      "text": "{minute}",
+      "x": 171.78125,
+      "y": 44,
+      "w": 136.21875,
+      "h": 135,
+      "size": 112,
+      "weight": 600,
+      "font": "Fredoka",
+      "color": "#2f5a45",
+      "opacity": 255,
+      "spacing": -2.8,
+      "angle": 0,
+      "numeric": true,
+      "baseline": 138.07999999999998,
+      "align": "start",
+      "anchor": 171.78125,
+      "vertical": false,
+      "multiline": false,
+      "lineHeight": 112,
+      "shadow": "none"
+    },
+    {
+      "type": "text",
+      "parent": -1,
+      "when": "",
+      "text": "{month}月{day}日 · {weekday_cn}",
+      "x": 48,
+      "y": 185,
+      "w": 260,
+      "h": 22,
+      "size": 22,
+      "weight": 400,
+      "font": "ZCOOL KuaiLe",
+      "color": "#4d7d65",
+      "opacity": 255,
+      "spacing": 0,
+      "angle": 0,
+      "numeric": true,
+      "baseline": 203.48,
+      "align": "start",
+      "anchor": 48,
+      "vertical": false,
+      "multiline": false,
+      "lineHeight": 33,
+      "shadow": "none"
+    },
+    {
+      "type": "art",
+      "parent": -1,
+      "when": "",
+      "src": "art-005.png",
+      "x": 48,
+      "y": 245,
+      "w": 260,
+      "h": 74
+    },
+    {
+      "type": "text",
+      "parent": -1,
+      "when": "",
+      "text": "{focus_minutes} 分钟",
+      "x": 228.46875,
+      "y": 262,
+      "w": 63.53125,
+      "h": 20,
+      "size": 20,
+      "weight": 400,
+      "font": "ZCOOL KuaiLe",
+      "color": "#2f5a45",
+      "opacity": 255,
+      "spacing": 0,
+      "angle": 0,
+      "numeric": true,
+      "baseline": 278.8,
+      "align": "start",
+      "anchor": 228.46875,
+      "vertical": false,
+      "multiline": false,
+      "lineHeight": 30,
+      "shadow": "none"
+    },
+    {
+      "type": "art",
+      "parent": -1,
+      "when": "",
+      "src": "art-007.png",
+      "x": 64,
+      "y": 295,
+      "w": 228,
+      "h": 12
+    },
+    {
+      "type": "progress",
+      "parent": -1,
+      "x": 64,
+      "y": 295,
+      "w": 228,
+      "h": 12,
+      "color": "#7cc39c",
+      "opacity": 255,
+      "bind": "focus"
+    },
+    {
+      "type": "art",
+      "parent": -1,
+      "when": "",
+      "src": "art-009.png",
+      "x": 48,
+      "y": 331,
+      "w": 260,
+      "h": 74
+    },
+    {
+      "type": "text",
+      "parent": -1,
+      "when": "",
+      "text": "{done} / {total}",
+      "x": 248.546875,
+      "y": 348,
+      "w": 43.453125,
+      "h": 20,
+      "size": 20,
+      "weight": 400,
+      "font": "ZCOOL KuaiLe",
+      "color": "#2f5a45",
+      "opacity": 255,
+      "spacing": 0,
+      "angle": 0,
+      "numeric": true,
+      "baseline": 364.8,
+      "align": "start",
+      "anchor": 248.546875,
+      "vertical": false,
+      "multiline": false,
+      "lineHeight": 30,
+      "shadow": "none"
+    },
+    {
+      "type": "art",
+      "parent": -1,
+      "when": "",
+      "src": "art-011.png",
+      "x": 64,
+      "y": 381,
+      "w": 228,
+      "h": 12
+    },
+    {
+      "type": "progress",
+      "parent": -1,
+      "x": 64,
+      "y": 381,
+      "w": 228,
+      "h": 12,
+      "color": "#7cc39c",
+      "opacity": 255,
+      "bind": "todo"
+    },
+    {
+      "type": "text",
+      "parent": -1,
+      "when": "",
+      "text": "♪ 正在听 {track}",
+      "x": 52,
+      "y": 421,
+      "w": 256,
+      "h": 18,
+      "size": 18,
+      "weight": 400,
+      "font": "ZCOOL KuaiLe",
+      "color": "#4d7d65",
+      "opacity": 255,
+      "spacing": 0,
+      "angle": 0,
+      "numeric": false,
+      "baseline": 436.12,
+      "align": "start",
+      "anchor": 52,
+      "vertical": false,
+      "multiline": false,
+      "lineHeight": 27,
+      "shadow": "none"
+    },
+    {
+      "type": "art",
+      "parent": -1,
+      "when": "",
+      "src": "art-014.png",
+      "x": 360,
+      "y": 412,
+      "w": 240,
+      "h": 240
+    },
+    {
+      "type": "art",
+      "parent": 1,
+      "when": "",
+      "src": "art-015.png",
+      "x": 281,
+      "y": 221,
+      "w": 398,
+      "h": 398
+    },
+    {
+      "type": "art",
+      "parent": -1,
+      "when": "",
+      "src": "art-016.png",
+      "x": 464,
+      "y": 404,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "type": "art",
+      "parent": 2,
+      "when": "",
+      "src": "art-017.png",
+      "x": 410,
+      "y": 598,
+      "w": 140,
+      "h": 16
+    },
+    {
+      "type": "art",
+      "parent": 3,
+      "when": "",
+      "src": "art-018.png",
+      "x": 428,
+      "y": 589,
+      "w": 94,
+      "h": 16
+    },
+    {
+      "type": "art",
+      "parent": 4,
+      "when": "",
+      "src": "art-019.png",
+      "x": 444,
+      "y": 589,
+      "w": 94,
+      "h": 16
+    },
+    {
+      "type": "art",
+      "parent": 2,
+      "when": "",
+      "src": "art-020.png",
+      "x": 376,
+      "y": 476,
+      "w": 200,
+      "h": 126
+    }
+  ],
+  "groups": [
+    {
+      "duration": 2000,
+      "delay": 0,
+      "reverse": false,
+      "easing": "linear",
+      "frames": [
+        {
+          "at": 0,
+          "transform": "none",
+          "opacity": 1
+        },
+        {
+          "at": 0.49,
+          "transform": "none",
+          "opacity": 1
+        },
+        {
+          "at": 0.5,
+          "transform": "none",
+          "opacity": 0
+        },
+        {
+          "at": 1,
+          "transform": "none",
+          "opacity": 0
+        }
+      ],
+      "parent": -1,
+      "cx": 149.375,
+      "cy": 44,
+      "playing": false
+    },
+    {
+      "duration": 1600,
+      "delay": 0,
+      "reverse": false,
+      "easing": "linear",
+      "frames": [
+        {
+          "at": 0,
+          "transform": "none",
+          "opacity": 1
+        },
+        {
+          "at": 1,
+          "transform": "rotate(360deg)",
+          "opacity": 1
+        }
+      ],
+      "parent": -1,
+      "cx": 480,
+      "cy": 420,
+      "playing": false
+    },
+    {
+      "duration": 266.6666666666667,
+      "delay": 0,
+      "reverse": false,
+      "easing": "linear",
+      "frames": [
+        {
+          "at": 0,
+          "transform": "translateY(0px)",
+          "opacity": 1
+        },
+        {
+          "at": 0.5,
+          "transform": "translateY(-6px)",
+          "opacity": 1
+        },
+        {
+          "at": 1,
+          "transform": "translateY(0px)",
+          "opacity": 1
+        }
+      ],
+      "parent": -1,
+      "cx": 0,
+      "cy": 0,
+      "playing": false
+    },
+    {
+      "duration": 266.6666666666667,
+      "delay": 0,
+      "reverse": false,
+      "easing": "linear",
+      "frames": [
+        {
+          "at": 0,
+          "transform": "translateX(-6px)",
+          "opacity": 1
+        },
+        {
+          "at": 0.5,
+          "transform": "translateX(6px)",
+          "opacity": 1
+        },
+        {
+          "at": 1,
+          "transform": "translateX(-6px)",
+          "opacity": 1
+        }
+      ],
+      "parent": 2,
+      "cx": 0,
+      "cy": 0,
+      "playing": false
+    },
+    {
+      "duration": 266.6666666666667,
+      "delay": 0,
+      "reverse": false,
+      "easing": "linear",
+      "frames": [
+        {
+          "at": 0,
+          "transform": "translateX(6px)",
+          "opacity": 1
+        },
+        {
+          "at": 0.5,
+          "transform": "translateX(-6px)",
+          "opacity": 1
+        },
+        {
+          "at": 1,
+          "transform": "translateX(6px)",
+          "opacity": 1
+        }
+      ],
+      "parent": 2,
+      "cx": 0,
+      "cy": 0,
+      "playing": false
+    }
+  ]
+}

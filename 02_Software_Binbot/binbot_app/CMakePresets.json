@@ -1,0 +1,43 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 20,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "rv1106-release",
+      "displayName": "RV1106 Release",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/build/rv1106",
+      "toolchainFile": "${sourceDir}/cmake/toolchains/rv1106.cmake",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },
+    {
+      "name": "host-simulator",
+      "displayName": "Host SDL2 UI Simulator",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/build/host-simulator",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "BINBOT_HOST_SIMULATOR": "ON",
+        "BINBOT_BUILD_AUDIO": "OFF",
+        "BINBOT_BUILD_DIALOG": "OFF",
+        "BINBOT_BUILD_CAMERA": "OFF"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "rv1106-release",
+      "configurePreset": "rv1106-release"
+    },
+    {
+      "name": "host-simulator",
+      "configurePreset": "host-simulator"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"schema":1,"id":"dot-matrix","name":"点阵跑马灯","english":"Dot Matrix","renderer":"pixel","refresh_ms":33,"background":"#000000","foreground":"#ffffff","accent":"#e8643c"}

@@ -1,0 +1,5 @@
+{
+  "schema": 1, "id": "weather", "name": "天气看板",
+  "description": "窗外的天气，身边的时间", "renderer": "scene", "refresh_ms": 1000,
+  "background": "#dce8ed", "foreground": "#243b49", "accent": "#d79642"
+}

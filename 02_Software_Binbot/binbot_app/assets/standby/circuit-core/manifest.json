@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "circuit-core",
+  "name": "芯片核心",
+  "english": "Circuit Core",
+  "renderer": "reference",
+  "refresh_ms": 66,
+  "background": "#000000",
+  "foreground": "#ffffff",
+  "accent": "#e8643c"
+}

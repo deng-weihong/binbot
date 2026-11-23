@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "neon-alley",
+  "name": "霓虹横丁",
+  "english": "Neon Alley",
+  "renderer": "reference",
+  "refresh_ms": 66,
+  "background": "#000000",
+  "foreground": "#ffffff",
+  "accent": "#e8643c"
+}

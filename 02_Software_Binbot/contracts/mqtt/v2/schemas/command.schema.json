@@ -1,0 +1,289 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "BrightnessCommand": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "device.command",
+          "title": "Type",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": 2,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "boot_id": {
+          "pattern": "^[0-9a-f]{32}$",
+          "title": "Boot Id",
+          "type": "string"
+        },
+        "command_id": {
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+          "title": "Command Id",
+          "type": "string"
+        },
+        "issued_at": {
+          "maximum": 4102444800,
+          "minimum": 946684800,
+          "title": "Issued At",
+          "type": "integer"
+        },
+        "expires_at": {
+          "maximum": 4102444800,
+          "minimum": 946684800,
+          "title": "Expires At",
+          "type": "integer"
+        },
+        "name": {
+          "const": "screen.brightness.set",
+          "title": "Name",
+          "type": "string"
+        },
+        "payload": {
+          "$ref": "#/$defs/BrightnessPayload"
+        }
+      },
+      "required": [
+        "type",
+        "schema_version",
+        "boot_id",
+        "command_id",
+        "issued_at",
+        "expires_at",
+        "name",
+        "payload"
+      ],
+      "title": "BrightnessCommand",
+      "type": "object"
+    },
+    "BrightnessPayload": {
+      "additionalProperties": false,
+      "properties": {
+        "brightness": {
+          "maximum": 100,
+          "minimum": 1,
+          "title": "Brightness",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "brightness"
+      ],
+      "title": "BrightnessPayload",
+      "type": "object"
+    },
+    "VolumeCommand": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "device.command",
+          "title": "Type",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": 2,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "boot_id": {
+          "pattern": "^[0-9a-f]{32}$",
+          "title": "Boot Id",
+          "type": "string"
+        },
+        "command_id": {
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+          "title": "Command Id",
+          "type": "string"
+        },
+        "issued_at": {
+          "maximum": 4102444800,
+          "minimum": 946684800,
+          "title": "Issued At",
+          "type": "integer"
+        },
+        "expires_at": {
+          "maximum": 4102444800,
+          "minimum": 946684800,
+          "title": "Expires At",
+          "type": "integer"
+        },
+        "name": {
+          "const": "audio.volume.set",
+          "title": "Name",
+          "type": "string"
+        },
+        "payload": {
+          "$ref": "#/$defs/VolumePayload"
+        }
+      },
+      "required": [
+        "type",
+        "schema_version",
+        "boot_id",
+        "command_id",
+        "issued_at",
+        "expires_at",
+        "name",
+        "payload"
+      ],
+      "title": "VolumeCommand",
+      "type": "object"
+    },
+    "VolumePayload": {
+      "additionalProperties": false,
+      "properties": {
+        "volume": {
+          "maximum": 100,
+          "minimum": 0,
+          "title": "Volume",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "volume"
+      ],
+      "title": "VolumePayload",
+      "type": "object"
+    },
+    "WorkspaceCommand": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "device.command",
+          "title": "Type",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": 2,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "boot_id": {
+          "pattern": "^[0-9a-f]{32}$",
+          "title": "Boot Id",
+          "type": "string"
+        },
+        "command_id": {
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+          "title": "Command Id",
+          "type": "string"
+        },
+        "issued_at": {
+          "maximum": 4102444800,
+          "minimum": 946684800,
+          "title": "Issued At",
+          "type": "integer"
+        },
+        "expires_at": {
+          "maximum": 4102444800,
+          "minimum": 946684800,
+          "title": "Expires At",
+          "type": "integer"
+        },
+        "name": {
+          "enum": [
+            "watchface.set",
+            "gestures.set",
+            "microphone.set",
+            "preferences.set",
+            "noise.set",
+            "focus.set",
+            "todo.replace",
+            "module.motor.set",
+            "module.light.set",
+            "module.pen.set",
+            "module.rotation.set",
+            "module.display.set",
+            "learning.deck.set",
+            "learning.events.ack",
+            "calendar.set",
+            "camera.publish",
+            "device.wake",
+            "music.play",
+            "music.pause",
+            "music.stop",
+            "music.previous",
+            "music.next",
+            "music.seek",
+            "music.select",
+            "todo.add",
+            "todo.edit",
+            "todo.set_done",
+            "todo.delete",
+            "display.gif",
+            "modules.image"
+          ],
+          "title": "Name",
+          "type": "string"
+        },
+        "payload": {
+          "additionalProperties": true,
+          "title": "Payload",
+          "type": "object"
+        }
+      },
+      "required": [
+        "type",
+        "schema_version",
+        "boot_id",
+        "command_id",
+        "issued_at",
+        "expires_at",
+        "name",
+        "payload"
+      ],
+      "title": "WorkspaceCommand",
+      "type": "object"
+    }
+  },
+  "discriminator": {
+    "mapping": {
+      "audio.volume.set": "#/$defs/VolumeCommand",
+      "calendar.set": "#/$defs/WorkspaceCommand",
+      "camera.publish": "#/$defs/WorkspaceCommand",
+      "device.wake": "#/$defs/WorkspaceCommand",
+      "display.gif": "#/$defs/WorkspaceCommand",
+      "focus.set": "#/$defs/WorkspaceCommand",
+      "gestures.set": "#/$defs/WorkspaceCommand",
+      "learning.deck.set": "#/$defs/WorkspaceCommand",
+      "learning.events.ack": "#/$defs/WorkspaceCommand",
+      "microphone.set": "#/$defs/WorkspaceCommand",
+      "module.display.set": "#/$defs/WorkspaceCommand",
+      "module.light.set": "#/$defs/WorkspaceCommand",
+      "module.motor.set": "#/$defs/WorkspaceCommand",
+      "module.pen.set": "#/$defs/WorkspaceCommand",
+      "module.rotation.set": "#/$defs/WorkspaceCommand",
+      "modules.image": "#/$defs/WorkspaceCommand",
+      "music.next": "#/$defs/WorkspaceCommand",
+      "music.pause": "#/$defs/WorkspaceCommand",
+      "music.play": "#/$defs/WorkspaceCommand",
+      "music.previous": "#/$defs/WorkspaceCommand",
+      "music.seek": "#/$defs/WorkspaceCommand",
+      "music.select": "#/$defs/WorkspaceCommand",
+      "music.stop": "#/$defs/WorkspaceCommand",
+      "noise.set": "#/$defs/WorkspaceCommand",
+      "preferences.set": "#/$defs/WorkspaceCommand",
+      "screen.brightness.set": "#/$defs/BrightnessCommand",
+      "todo.add": "#/$defs/WorkspaceCommand",
+      "todo.delete": "#/$defs/WorkspaceCommand",
+      "todo.edit": "#/$defs/WorkspaceCommand",
+      "todo.replace": "#/$defs/WorkspaceCommand",
+      "todo.set_done": "#/$defs/WorkspaceCommand",
+      "watchface.set": "#/$defs/WorkspaceCommand"
+    },
+    "propertyName": "name"
+  },
+  "oneOf": [
+    {
+      "$ref": "#/$defs/BrightnessCommand"
+    },
+    {
+      "$ref": "#/$defs/VolumeCommand"
+    },
+    {
+      "$ref": "#/$defs/WorkspaceCommand"
+    }
+  ]
+}

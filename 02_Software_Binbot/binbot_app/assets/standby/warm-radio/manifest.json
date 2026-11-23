@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "warm-radio",
+  "name": "暖光收音机",
+  "english": "Warm Radio",
+  "renderer": "reference",
+  "refresh_ms": 66,
+  "background": "#000000",
+  "foreground": "#ffffff",
+  "accent": "#e8643c"
+}

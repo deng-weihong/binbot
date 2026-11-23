@@ -1,0 +1,5 @@
+find_package(OpenSSL REQUIRED)
+add_library(binbot_component_client STATIC src/client.c src/cli.c src/worker.c src/slave_ota.c)
+target_include_directories(binbot_component_client PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include")
+target_link_libraries(binbot_component_client PUBLIC binbot_component_protocol binbot_audio_ipc binbot_slave_ipc OpenSSL::Crypto)
+target_compile_options(binbot_component_client PRIVATE -Wall -Wextra -Wpedantic)
